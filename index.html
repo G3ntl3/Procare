@@ -523,17 +523,12 @@ body::after{content:"";position:fixed;inset:-50%;z-index:90;pointer-events:none;
     <p>14 live<br>sites</p>
   </div>
 
-  <div id="pins">
-    <div class="pin" data-x="1880" data-y="1160" data-m="0"><span class="pin__dot"></span><span class="pin__tag">Windows wrapped <b>Week 14</b></span></div>
-    <div class="pin" data-x="1000" data-y="1080" data-m="0"><span class="pin__dot"></span><span class="pin__tag">OSB sheathing <b>18 mm</b></span></div>
-  </div>
 
   <div class="hero__bottom wrap">
     <div>
       <h1>We design and build places to <em>live, work</em> and gather.</h1>
       <div class="hero__cta">
         <a class="btn" href="#contact" data-cursor-link><span class="btn__txt">Start a project</span><span class="btn__ico"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 13 13 3M5 3h8v8"/></svg></span></a>
-        <a class="btn btn--line" href="#projects" data-cursor-link><span class="btn__txt">See our work</span></a>
       </div>
       <div class="hero__meta mono"><span>51.5072° N</span><span>0.1276° W</span><span>Sheet A-000</span></div>
     </div>
@@ -556,7 +551,6 @@ body::after{content:"";position:fixed;inset:-50%;z-index:90;pointer-events:none;
   <div class="about__grid">
     <figure class="fig about__tall" data-parallax>
       <img decoding="async" src="assets/crew-scaffold.webp" alt="Three site operatives fixing reinforcement above a scaffold deck" loading="lazy">
-      <figcaption class="mono">Level 04 deck pour · Week 22</figcaption>
     </figure>
     <div class="about__copy">
       <p><strong>Axen Form started in 1998 as six carpenters and an architect sharing a yard in Deptford.</strong> We now run 180 people across design, estimating and site, and we still don't subcontract the work we're known for: frames, carpentry and the final fix.</p>
@@ -571,7 +565,6 @@ body::after{content:"";position:fixed;inset:-50%;z-index:90;pointer-events:none;
     </div>
     <figure class="fig about__wide" data-parallax>
       <img decoding="async" src="assets/crew-interior.webp" alt="Carpenters in hi-vis vests fitting door linings inside a plastered shell" loading="lazy">
-      <figcaption class="mono">Second fix · Ashcombe House</figcaption>
     </figure>
     <div class="about__dim dim mono"><i>14 400 mm · typical residential bay, setting-out to finished face</i></div>
   </div>
@@ -609,7 +602,6 @@ body::after{content:"";position:fixed;inset:-50%;z-index:90;pointer-events:none;
 </section>
 <div class="svc-preview" id="svc-preview" aria-hidden="true">
   <img src="assets/sheathed-house.webp" alt=""><img src="assets/frame-row-b.webp" alt=""><img src="assets/crew-slab.webp" alt=""><img src="assets/demolition.webp" alt=""><img src="assets/interior-crew.webp" alt=""><img src="assets/frame-open.webp" alt="">
-  <span class="mono" id="svc-preview-code">SV-01</span>
 </div>
 
 <!-- ───────── Build sequence (3D) ───────── -->
@@ -727,7 +719,6 @@ body::after{content:"";position:fixed;inset:-50%;z-index:90;pointer-events:none;
 <section class="field" id="field" aria-label="Quality">
   <div class="field__sticky">
     <div class="field__img" id="field-img"><img decoding="async" src="assets/interior-crew.webp" alt="Carpenters fixing studwork inside an open timber frame" loading="lazy"></div>
-    <div class="field__corners mono" aria-hidden="true"><span>Detail 7 · Ground floor, grid C–D</span><span>Photo diary · Week 18</span></div>
     <div class="field__text wrap">
       <h2>Every joist is checked by someone who <em>signs for it.</em></h2>
       <p>Each stage is inspected by our own quality lead before the next trade starts, then recorded in the photo diary you get every Friday.</p>
@@ -911,7 +902,6 @@ body::after{content:"";position:fixed;inset:-50%;z-index:90;pointer-events:none;
     gsap.from('.hero__cut', { scale: 1.08, duration: 2, ease: 'expo.out' });
     gsap.from('.hero__bg', { scale: 1.15, duration: 2.2, ease: 'expo.out' });
     gsap.from('.hero__bottom > *, .hero__top p', { y: 30, opacity: 0, duration: 1.1, ease: 'expo.out', stagger: 0.08, delay: 0.4 });
-    gsap.from('.pin', { scale: 0, opacity: 0, duration: 0.8, ease: 'back.out(2)', stagger: 0.12, delay: 0.9 });
   }
 
   /* hero pins mapped from image pixels to the cover-fit box (honours object-position) */
@@ -945,7 +935,7 @@ body::after{content:"";position:fixed;inset:-50%;z-index:90;pointer-events:none;
 
   const narrow = () => innerWidth <= 820;
   const nav = $('#nav');
-  const prev = $('#svc-preview'), prevImgs = $$('img', prev), prevCode = $('#svc-preview-code');
+  const prev = $('#svc-preview'), prevImgs = $$('img', prev);
   const cur = $('#cursor'), curL = $('#cursor-label');
 
   if (hasGsap && !reduce) {
@@ -1009,7 +999,6 @@ body::after{content:"";position:fixed;inset:-50%;z-index:90;pointer-events:none;
       if (narrow() || !fine) return;
       prev.classList.add('is-on');
       prevImgs.forEach((im, i) => im.classList.toggle('is-active', i === +row.dataset.img));
-      prevCode.textContent = $('.svc__code', row).textContent;
     });
     row.addEventListener('pointerleave', () => prev.classList.remove('is-on'));
     btn.addEventListener('click', () => {
