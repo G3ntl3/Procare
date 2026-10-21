@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&family=Hanken+Grotesk:wght@400;500;600&family=Cormorant+Garamond:ital,wght@1,400;1,500&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
-/* Layout: one drawing sheet, marked "preliminary". Title block bottom-right, 3D mark centre stage, hazard tape top and bottom. */
+/* Layout: one drawing sheet, marked "preliminary". Title block bottom-right, site photo centre stage, hazard tape top and bottom. */
 :root{
   --charcoal:#0F0F0F;--graphite:#3A3A3A;--warm:#8D8D86;--stone:#D7D2C9;--bone:#F6F5F2;--amber:#E3A32A;
   --rule-d:rgba(246,245,242,.14);
@@ -51,14 +51,13 @@ header{position:relative;z-index:4;display:flex;justify-content:space-between;al
 .pill{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 18px;border:1px solid currentColor;border-radius:99px;font-size:.88rem;transition:background .3s,color .3s}
 .pill:hover{background:var(--bone);color:var(--charcoal)}
 main{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:clamp(24px,4vw,64px);padding-block:clamp(24px,4vw,48px)}
-.stage{position:relative;aspect-ratio:1;width:100%;max-width:620px;justify-self:center;cursor:grab}
-.stage:active{cursor:grabbing}
-.stage canvas{position:absolute;inset:0;width:100%;height:100%}
-.stage svg{position:absolute;inset:20%;width:60%;height:60%}
-.stage .dim{position:absolute;color:var(--warm);display:flex;align-items:center;gap:8px}
+.stage{position:relative;margin:0;aspect-ratio:4/5;width:100%;max-width:520px;justify-self:center;border-radius:10px;overflow:hidden}
+.stage img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.8)}
+.stage::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(15,15,15,.55),rgba(15,15,15,0) 40%)}
+.stage .dim{position:absolute;z-index:1;color:var(--bone);display:flex;align-items:center;gap:8px}
 .stage .dim::before,.stage .dim::after{content:"";flex:1;height:1px;background:currentColor;opacity:.5}
 .stage .dim--x{left:12%;right:12%;bottom:6%}
-.stage .tag{position:absolute;right:4%;top:8%;display:flex;gap:8px;align-items:center;color:var(--warm)}
+.stage .tag{position:absolute;z-index:1;left:14px;top:14px;padding:6px 10px;border-radius:99px;background:rgba(15,15,15,.6);color:var(--bone)}
 .dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--amber);animation:ping 2s infinite}
 @keyframes ping{0%{box-shadow:0 0 0 0 rgba(227,163,42,.55)}80%,100%{box-shadow:0 0 0 10px rgba(227,163,42,0)}}
 .copy{display:flex;flex-direction:column;gap:28px;min-width:0}
@@ -110,11 +109,11 @@ h1 em{font-family:var(--f-serif);font-style:italic;letter-spacing:-.03em}
   </header>
 
   <main class="wrap">
-    <div class="stage" id="stage" aria-label="Rotating 3D Axen Form logo. Drag to spin it.">
-      <svg viewBox="0 0 100 100" aria-hidden="true"><path fill="#F6F5F2" d="M56 2 94 98 56 98Z"/><path fill="#D7D2C9" d="M56 2 56 56 34 56Z"/><path fill="#8D8D86" d="M34 56 8 98 34 98Z"/><path fill="#3A3A3A" d="M34 56H56V98H34Z"/></svg>
-      <span class="tag mono">Drag to rotate</span>
-      <span class="dim dim--x mono">860 mm</span>
-    </div>
+    <figure class="stage">
+      <img src="assets/frame-open.webp" alt="Timber frame rising on a new slab" decoding="async">
+      <figcaption class="tag mono">Photo diary · Week 18</figcaption>
+      <span class="dim dim--x mono">14 400 mm</span>
+    </figure>
     <div class="copy">
       <span class="eyebrow mono">Sheet X-000 · Preliminary · Not for construction</span>
       <h1>This page is still <em>on site.</em></h1>
@@ -150,71 +149,6 @@ h1 em{font-family:var(--f-serif);font-style:italic;letter-spacing:-.03em}
   let html = ''; for (let i = 0; i < 12; i++) html += `<span>${words}</span>`;
   el.innerHTML = html + html;
 });
-</script>
-<script type="module">
-import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.min.js';
-const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
-const lerp = (a, b, t) => a + (b - a) * t;
-const host = document.getElementById('stage');
-let renderer;
-try { renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true }); } catch (e) { renderer = null; }
-if (renderer) {
-  host.appendChild(renderer.domElement); host.querySelector('svg').style.display = 'none';
-  renderer.setPixelRatio(Math.min(devicePixelRatio, 1.5)); renderer.outputColorSpace = THREE.SRGBColorSpace;
-  renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap;
-  const scene = new THREE.Scene();
-  const camera = new THREE.PerspectiveCamera(28, 1, 1, 2000); camera.position.set(0, 10, 360);
-  scene.add(new THREE.AmbientLight(0xffffff, 0.45));
-  const key = new THREE.DirectionalLight(0xfff4e6, 2.8); key.position.set(140, 200, 240); key.castShadow = true;
-  Object.assign(key.shadow.camera, { left: -120, right: 120, top: 120, bottom: -120, near: 10, far: 800 }); key.shadow.mapSize.set(1024, 1024);
-  scene.add(key);
-  const fill = new THREE.DirectionalLight(0xE3A32A, 1.0); fill.position.set(-220, -60, 100); scene.add(fill);
-  const polys = [
-    { p: [[56, 2], [94, 98], [56, 98]], c: 0xF6F5F2, d: 16 },
-    { p: [[56, 2], [56, 56], [34, 56]], c: 0xD7D2C9, d: 26 },
-    { p: [[34, 56], [8, 98], [34, 98]], c: 0x8D8D86, d: 12 },
-    { p: [[34, 56], [56, 56], [56, 98], [34, 98]], c: 0x4a4a47, d: 6 },
-  ];
-  const g = new THREE.Group(); scene.add(g);
-  const parts = [];
-  polys.forEach(({ p, c, d }, i) => {
-    const s = new THREE.Shape(); p.forEach(([x, y], j) => (j ? s.lineTo : s.moveTo).call(s, x - 51, 50 - y));
-    const geo = new THREE.ExtrudeGeometry(s, { depth: d, bevelEnabled: true, bevelThickness: 0.8, bevelSize: 0.6, bevelSegments: 2 });
-    geo.translate(0, 0, -d / 2);
-    const m = new THREE.Mesh(geo, new THREE.MeshStandardMaterial({ color: c, roughness: 0.7, metalness: 0.04 }));
-    m.castShadow = true; m.receiveShadow = true;
-    m.add(new THREE.LineSegments(new THREE.EdgesGeometry(geo, 25), new THREE.LineBasicMaterial({ color: 0x0f0f0f, transparent: true, opacity: 0.35 })));
-    g.add(m); parts.push({ m, off: i });
-  });
-  // a wireframe "scaffold" cube around the mark
-  const cage = new THREE.LineSegments(new THREE.EdgesGeometry(new THREE.BoxGeometry(130, 130, 60)), new THREE.LineBasicMaterial({ color: 0x8D8D86, transparent: true, opacity: 0.35 }));
-  scene.add(cage);
-  let tx = 0, ty = 0, rx = 0, ry = 0, spin = 0, spinV = 0.004, dragging = false, lx = 0;
-  addEventListener('pointermove', e => { tx = e.clientX / innerWidth - 0.5; ty = e.clientY / innerHeight - 0.5; if (dragging) { spinV = (e.clientX - lx) * 0.012; lx = e.clientX; } });
-  host.addEventListener('pointerdown', e => { dragging = true; lx = e.clientX; });
-  addEventListener('pointerup', () => dragging = false);
-  function resize() { const r = host.getBoundingClientRect(); renderer.setSize(r.width, r.height, false); camera.aspect = r.width / r.height; camera.updateProjectionMatrix(); }
-  resize(); addEventListener('resize', resize);
-  const t0 = performance.now();
-  function loop(now) {
-    const t = (now - t0) / 1000;
-    if (!dragging) spinV = lerp(spinV, reduce ? 0 : 0.004, 0.02);
-    spin += spinV;
-    rx = lerp(rx, ty * 0.5, 0.05); ry = lerp(ry, tx * 0.8, 0.05);
-    g.rotation.set(rx, ry + spin, 0);
-    // assemble: planes fly in from exploded positions during the first 2.4 s, then breathe apart slightly
-    const a = reduce ? 1 : Math.min(1, t / 2.4), ea = 1 - Math.pow(1 - a, 4);
-    parts.forEach(({ m, off }) => {
-      const breathe = reduce ? 0 : Math.sin(t * 0.9 + off) * 2.2;
-      m.position.z = (1 - ea) * (120 - off * 60) + breathe * (off - 1.5);
-      m.position.y = (1 - ea) * (off % 2 ? 60 : -60);
-    });
-    cage.rotation.set(rx * 0.6, ry * 0.6 + spin * 0.3, 0);
-    renderer.render(scene, camera);
-    requestAnimationFrame(loop);
-  }
-  requestAnimationFrame(loop);
-}
 </script>
 </body>
 </html>

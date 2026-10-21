@@ -1,6 +1,6 @@
 # Axen Form
 
-Portfolio concept for **Axen Form**, a fictional design-and-build contractor. A homepage plus an "in development" holding page.
+Portfolio concept for **Axen Form**, a fictional design-and-build contractor. A homepage plus an "in development" holding page. There is no loading screen.
 
 ## What's in it
 
