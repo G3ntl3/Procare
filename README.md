@@ -1,6 +1,6 @@
 # Axen Form
 
-Portfolio concept for **Axen Form**, a fictional design-and-build contractor. A homepage plus an "in development" holding page. There is no loading screen.
+Website for **Axen Form**, a design-and-build contractor. A homepage plus an "in development" holding page. There is no loading screen.
 
 ## What's in it
 
@@ -26,4 +26,3 @@ Libraries load from CDNs (three.js from jsDelivr, GSAP from cdnjs, Lenis from js
 - `in-development.html` — holding page for links that aren't built yet
 - `assets/` — WebP photography, plus the hero sky cutout used for the depth effect
 
-All names, figures, projects and testimonials are fictional.
