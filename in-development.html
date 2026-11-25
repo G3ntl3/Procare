@@ -3,16 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="claude:viewport-fit-sides" content="cover">
-<title>Axen Form · On Site</title>
+<title>Procare Cladding &amp; Signage Place · On Site</title>
+<meta name="theme-color" content="#071636">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&family=Hanken+Grotesk:wght@400;500;600&family=Cormorant+Garamond:ital,wght@1,400;1,500&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
-/* Layout: one drawing sheet, marked "preliminary". Title block bottom-right, site photo centre stage, hazard tape top and bottom. */
+/* Layout: one drawing sheet, marked "preliminary". Procare deep royal blue + crisp white + high-vis orange-amber. */
 :root{
-  --charcoal:#0F0F0F;--graphite:#3A3A3A;--warm:#8D8D86;--stone:#D7D2C9;--bone:#F6F5F2;--amber:#E3A32A;
-  --rule-d:rgba(246,245,242,.14);
+  --charcoal:#071636;--royal:#0E3FA9;--graphite:#1D3566;--warm:#93A7C9;--stone:#CFD9EA;--bone:#F7F9FC;--amber:#F27A1A;
+  --rule-d:rgba(247,249,252,.14);
   --f-display:"Archivo","Helvetica Neue",Arial,sans-serif;
   --f-body:"Hanken Grotesk","Helvetica Neue",Arial,sans-serif;
   --f-serif:"Cormorant Garamond",Georgia,serif;
@@ -33,7 +33,7 @@ a{color:inherit;text-decoration:none}
 .page>*{min-width:0}
 .grid{position:absolute;inset:0;pointer-events:none;
   background-image:linear-gradient(var(--rule-d) 1px,transparent 1px),linear-gradient(90deg,var(--rule-d) 1px,transparent 1px),
-    linear-gradient(rgba(246,245,242,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(246,245,242,.05) 1px,transparent 1px);
+    linear-gradient(rgba(247,249,252,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(247,249,252,.05) 1px,transparent 1px);
   background-size:160px 160px,160px 160px,32px 32px,32px 32px;background-position:center;
   mask-image:radial-gradient(ellipse at center,#000 30%,transparent 80%);-webkit-mask-image:radial-gradient(ellipse at center,#000 30%,transparent 80%)}
 .tape{position:relative;z-index:3;overflow:hidden;height:38px;background:var(--amber);color:var(--charcoal);display:flex;align-items:center}
@@ -46,46 +46,44 @@ a{color:inherit;text-decoration:none}
 header{position:relative;z-index:4;display:flex;justify-content:space-between;align-items:center;gap:16px;padding-block:20px}
 .brand{display:flex;align-items:center;gap:12px}
 .brand svg{width:30px;height:30px}
-.brand__word{font-family:var(--f-display);font-weight:500;letter-spacing:.32em;font-size:.82rem;line-height:1.1}
-.brand__word small{display:block;font-size:.56rem;letter-spacing:.42em;opacity:.7;font-weight:400}
+.brand__word{font-family:var(--f-display);font-weight:600;letter-spacing:.28em;font-size:.84rem;line-height:1.15}
+.brand__word small{display:block;font-size:.54rem;letter-spacing:.34em;opacity:.75;font-weight:400}
 .pill{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 18px;border:1px solid currentColor;border-radius:99px;font-size:.88rem;transition:background .3s,color .3s}
 .pill:hover{background:var(--bone);color:var(--charcoal)}
 main{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:clamp(24px,4vw,64px);padding-block:clamp(24px,4vw,48px)}
-.stage{position:relative;margin:0;aspect-ratio:4/5;width:100%;max-width:520px;justify-self:center;border-radius:10px;overflow:hidden}
-.stage img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.8)}
-.stage::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(15,15,15,.55),rgba(15,15,15,0) 40%)}
-.stage .dim{position:absolute;z-index:1;color:var(--bone);display:flex;align-items:center;gap:8px}
-.stage .dim::before,.stage .dim::after{content:"";flex:1;height:1px;background:currentColor;opacity:.5}
-.stage .dim--x{left:12%;right:12%;bottom:6%}
-.stage .tag{position:absolute;z-index:1;left:14px;top:14px;padding:6px 10px;border-radius:99px;background:rgba(15,15,15,.6);color:var(--bone)}
-.dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--amber);animation:ping 2s infinite}
-@keyframes ping{0%{box-shadow:0 0 0 0 rgba(227,163,42,.55)}80%,100%{box-shadow:0 0 0 10px rgba(227,163,42,0)}}
+.stage{position:relative;margin:0;aspect-ratio:4/5;width:100%;max-width:520px;justify-self:center;border-radius:10px;overflow:hidden;border:1px solid var(--rule-d)}
+.stage img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.85)}
+.stage::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(7,22,54,.65),rgba(7,22,54,0) 45%)}
 .copy{display:flex;flex-direction:column;gap:28px;min-width:0}
 .eyebrow{color:var(--amber);display:flex;gap:10px;align-items:center}
-h1{margin:0;font-family:var(--f-display);font-weight:400;font-size:clamp(2.8rem,6.6vw,7rem);line-height:.9;letter-spacing:-.055em;text-wrap:balance}
-h1 em{font-family:var(--f-serif);font-style:italic;letter-spacing:-.03em}
-.lead{margin:0;color:var(--warm);font-size:clamp(1.05rem,1.4vw,1.3rem);max-width:40ch}
+h1{margin:0;font-family:var(--f-display);font-weight:400;font-size:clamp(2.8rem,6.6vw,6.6rem);line-height:.9;letter-spacing:-.055em;text-wrap:balance}
+h1 em{font-family:var(--f-serif);font-style:italic;letter-spacing:-.03em;color:#FFD0A6}
+.lead{margin:0;color:var(--warm);font-size:clamp(1.05rem,1.4vw,1.3rem);max-width:42ch}
 .prog{display:flex;flex-direction:column;gap:10px;max-width:460px}
 .prog__row{display:flex;justify-content:space-between;color:var(--warm)}
 .prog__row b{color:var(--bone);font-weight:500;font-variant-numeric:tabular-nums}
-.prog__bar{position:relative;height:6px;border-radius:99px;background:rgba(246,245,242,.1);overflow:hidden}
-.prog__bar i{position:absolute;inset:0;width:68%;border-radius:99px;background:repeating-linear-gradient(-45deg,var(--amber) 0 8px,#c98b1c 8px 16px);background-size:22.6px 22.6px;animation:stripes 1s linear infinite}
+.prog__bar{position:relative;height:6px;border-radius:99px;background:rgba(247,249,252,.12);overflow:hidden}
+.prog__bar i{position:absolute;inset:0;width:68%;border-radius:99px;background:repeating-linear-gradient(-45deg,var(--amber) 0 8px,#c95f0c 8px 16px);background-size:22.6px 22.6px;animation:stripes 1s linear infinite}
 @keyframes stripes{to{background-position:22.6px 0}}
 .coming{list-style:none;margin:0;padding:0;border-top:1px solid var(--rule-d);max-width:460px}
 .coming li{display:grid;grid-template-columns:60px 1fr auto;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--rule-d)}
-.coming li span:first-child{color:var(--warm)}
+.coming li span:first-child{color:var(--amber)}
 .coming li b{font-weight:500}
 .coming li span:last-child{color:var(--warm)}
-.btn{display:inline-flex;align-items:center;gap:16px;height:56px;padding:5px 5px 5px 24px;border-radius:99px;background:var(--bone);color:var(--charcoal);font-weight:500;align-self:flex-start;white-space:nowrap}
-.btn__ico{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--charcoal);color:var(--bone);transition:transform .5s var(--ease)}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:16px;height:56px;padding:5px 5px 5px 24px;border-radius:99px;background:var(--bone);color:var(--charcoal);font-weight:500;align-self:flex-start;white-space:nowrap;transition:background .3s}
+.btn--amber{background:var(--amber);color:var(--charcoal)}
+.btn__ico{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--royal);color:var(--bone);transition:transform .5s var(--ease)}
+.btn--amber .btn__ico{background:var(--charcoal);color:var(--bone)}
 .btn__ico svg{width:15px;height:15px}
-.btn:hover .btn__ico{transform:translateX(-4px)}
+.btn:hover .btn__ico{transform:translateX(3px)}
 .titleblock{position:relative;z-index:3;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border-top:1px solid var(--rule-d);margin-bottom:24px}
 .titleblock div{padding:12px 14px;border-right:1px solid var(--rule-d);display:flex;flex-direction:column;gap:4px;min-width:0}
 .titleblock div:first-child{padding-left:0}
 .titleblock div:last-child{border-right:0}
 .titleblock span{color:var(--warm)}
-.titleblock b{font-weight:500;font-size:.92rem}
+.titleblock b,.titleblock a{font-weight:500;font-size:.92rem}
+.titleblock a:hover{color:var(--amber)}
 @media (max-width:860px){
   main{grid-template-columns:1fr}
   .stage{max-width:360px}
@@ -101,41 +99,48 @@ h1 em{font-family:var(--f-serif);font-style:italic;letter-spacing:-.03em}
   <div class="grid" aria-hidden="true"></div>
   <div class="tape" aria-hidden="true"><div class="tape__track" id="tape-a"></div></div>
   <header class="wrap">
-    <a class="brand" href="index.html" aria-label="Axen Form home">
-      <svg viewBox="0 0 100 100" aria-hidden="true"><path fill="#F6F5F2" d="M56 2 94 98 56 98Z"/><path fill="#D7D2C9" d="M56 2 56 56 34 56Z"/><path fill="#8D8D86" d="M34 56 8 98 34 98Z"/><path fill="#3A3A3A" d="M34 56H56V98H34Z"/></svg>
-      <span class="brand__word">AXEN FORM<small>DESIGN &amp; BUILD</small></span>
+    <a class="brand" href="index.html" aria-label="Procare Cladding & Signage Place home">
+      <svg viewBox="0 0 100 100" aria-hidden="true">
+        <path fill="#F7F9FC" d="M12 8h44c19 0 32 11 32 29S75 66 56 66H34v26H12V8Zm22 18v22h20c8 0 13-4 13-11s-5-11-13-11H34Z"/>
+        <path fill="#F27A1A" d="M56 72h32v20H56Z"/>
+        <path fill="#0E3FA9" d="M38 72h14v20H38Z"/>
+      </svg>
+      <span class="brand__word">PROCARE<small>CLADDING &amp; SIGNAGE</small></span>
     </a>
     <a class="pill" href="index.html">← Back to home</a>
   </header>
 
   <main class="wrap">
     <figure class="stage">
-      <img src="assets/frame-open.webp" alt="Timber frame rising on a new slab" decoding="async">
+      <img src="assets/frame-open.webp" alt="Representative commercial framing on site" decoding="async">
     </figure>
     <div class="copy">
-      <span class="eyebrow mono">Sheet X-000 · Preliminary · Not for construction</span>
+      <span class="eyebrow mono">Sheet X-000 · Preliminary · Catalogue in Progress</span>
       <h1>This page is still <em>on site.</em></h1>
-      <p class="lead">We're building it the way we build everything: frame first, then the details. It opens once it has passed our own snagging.</p>
+      <p class="lead">We are compiling detailed project sheets and specifications for our cladding, 3D signage, metal works and Procare Builders divisions. Return to the homepage or reach our team directly on WhatsApp.</p>
       <div class="prog">
-        <div class="prog__row mono"><span>Programme</span><b>Week 31 of 46 · 68%</b></div>
+        <div class="prog__row mono"><span>Build Status</span><b>Concept Preview · Ready for Brand Assets</b></div>
         <div class="prog__bar"><i></i></div>
       </div>
       <ul class="coming">
-        <li><span class="mono">A-402</span><b>Project case studies</b><span class="mono">Frame</span></li>
-        <li><span class="mono">J-100</span><b>Journal &amp; photo diaries</b><span class="mono">Envelope</span></li>
-        <li><span class="mono">C-200</span><b>Careers</b><span class="mono">Fit-out</span></li>
+        <li><span class="mono">A-402</span><b>Cladding &amp; signage gallery</b><span class="mono">In progress</span></li>
+        <li><span class="mono">B-200</span><b>Procare Builders portfolio</b><span class="mono">In progress</span></li>
+        <li><span class="mono">M-300</span><b>Metal works specifications</b><span class="mono">In progress</span></li>
       </ul>
-      <a class="btn" href="index.html"><span class="btn__txt">Return to the homepage</span><span class="btn__ico"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 8H2M7 3 2 8l5 5"/></svg></span></a>
+      <div class="actions">
+        <a class="btn" href="index.html"><span class="btn__txt">Return to homepage</span><span class="btn__ico"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 8H2M7 3 2 8l5 5"/></svg></span></a>
+        <a class="btn btn--amber" href="https://api.whatsapp.com/send?phone=2349028399853" target="_blank" rel="noopener"><span class="btn__txt">WhatsApp +234 902 839 9853</span><span class="btn__ico"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 13 13 3M5 3h8v8"/></svg></span></a>
+      </div>
     </div>
   </main>
 
   <div>
     <div class="titleblock wrap mono">
-      <div><span>Project</span><b>axenform.co</b></div>
-      <div><span>Drawing</span><b>X-000 Holding page</b></div>
-      <div><span>Status</span><b>S2 · Information</b></div>
-      <div><span>Revision</span><b>P03</b></div>
-      <div><span>Enquiries</span><b>studio@axenform.co</b></div>
+      <div><span>Brand</span><b>Procare Cladding &amp; Signage</b></div>
+      <div><span>Registration</span><b>RC: 1990397 · Since 2017</b></div>
+      <div><span>Coverage</span><b>Lagos · Ibadan · Travel</b></div>
+      <div><span>Divisions</span><b>Builders · Cladding · Signs</b></div>
+      <div><span>WhatsApp</span><a href="https://api.whatsapp.com/send?phone=2349028399853" target="_blank" rel="noopener">+234 902 839 9853 ↗</a></div>
     </div>
     <div class="tape tape--b" aria-hidden="true"><div class="tape__track" id="tape-b"></div></div>
   </div>
@@ -143,8 +148,8 @@ h1 em{font-family:var(--f-serif);font-style:italic;letter-spacing:-.03em}
 
 <script>
 ['tape-a', 'tape-b'].forEach(id => {
-  const el = document.getElementById(id), words = id === 'tape-a' ? 'Under construction · Hard hats beyond this point' : 'Page in progress · Axen Form site team';
-  let html = ''; for (let i = 0; i < 12; i++) html += `<span>${words}</span>`;
+  const el = document.getElementById(id), words = id === 'tape-a' ? 'Procare Cladding & Signage Place · RC 1990397 · Lagos & Ibadan' : 'Page in progress · Building Construction · Cladding · Signages · Metal Works';
+  let html = ''; for (let i = 0; i < 10; i++) html += `<span>${words}</span>`;
   el.innerHTML = html + html;
 });
 </script>

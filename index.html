@@ -3,28 +3,36 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Axen Form</title>
-<meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Axen Form is a design and build contractor delivering homes, workplaces and restorations across London and the South East.">
+<title>Procare Cladding &amp; Signage Place | Building Construction, Cladding, Signages &amp; Metal Works</title>
+<meta name="description" content="Procare Cladding &amp; Signage Place (RC: 1990397) delivers building construction, architectural facade cladding, 3D signages and metal works across Lagos, Ibadan and nationwide since 2017.">
+<meta name="theme-color" content="#071636">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Procare Cladding &amp; Signage Place">
+<meta property="og:title" content="Procare Cladding &amp; Signage Place — Building Construction, Cladding, Signages &amp; Metal Works">
+<meta property="og:description" content="CAC Registered (RC: 1990397) since 2017. Building construction, ACP cladding, illuminated signages and custom metal works across Lagos, Ibadan and nationwide.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Procare Cladding &amp; Signage Place | Lagos &amp; Ibadan">
+<meta name="twitter:description" content="Building Construction, Facade Cladding, 3D Signages &amp; Metal Works. Lagos | Ibadan · Available to travel.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&family=Hanken+Grotesk:wght@400;500;600&family=Cormorant+Garamond:ital,wght@1,400;1,500&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
 html,body{margin:0}
-/* Layout: a set of construction drawings. Each section is a sheet with its own code (A-101, S-301…),
-   alternating paper (bone) and site-at-night (charcoal). Annotations, datums and dimension lines are the ornament. */
+/* Layout: architectural construction drawing sheets (A-101, A-201, S-301…),
+   tailored to Procare's deep royal blue, crisp white/bone and high-vis orange-amber palette. */
 :root{
-  --charcoal:#0F0F0F;
-  --graphite:#3A3A3A;
-  --warm:#8D8D86;
-  --stone:#D7D2C9;
-  --bone:#F6F5F2;
-  --amber:#E3A32A;          /* tower-crane yellow, used only for "live" things */
-  --ink-2:#55554F;          /* secondary text on bone */
-  --paper-2:#ECEAE4;        /* recessed bone */
-  --night-2:#1A1A19;        /* raised charcoal */
-  --rule-l:rgba(15,15,15,.14);
-  --rule-d:rgba(246,245,242,.16);
+  --charcoal:#071636;       /* deep royal navy */
+  --royal:#0E3FA9;          /* Procare signature royal blue */
+  --graphite:#1D3566;       /* mid architectural blue-slate */
+  --warm:#93A7C9;           /* blueprint slate labels on dark */
+  --stone:#CFD9EA;          /* soft blueprint rule tint */
+  --bone:#F7F9FC;           /* crisp architectural white/bone */
+  --amber:#F27A1A;          /* high-vis construction orange-amber */
+  --ink-2:#3E5070;          /* secondary text on crisp white */
+  --paper-2:#EAF0F8;        /* recessed blueprint paper */
+  --night-2:#0D2352;        /* raised royal navy */
+  --rule-l:rgba(7,22,54,.14);
+  --rule-d:rgba(247,249,252,.16);
 
   --f-display:"Archivo","Helvetica Neue",Arial,sans-serif;
   --f-body:"Hanken Grotesk","Helvetica Neue",Arial,sans-serif;
@@ -60,7 +68,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;paddin
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 
 /* grain */
-body::after{content:"";position:fixed;inset:-50%;z-index:90;pointer-events:none;opacity:.07;
+body::after{content:"";position:fixed;inset:-50%;z-index:90;pointer-events:none;opacity:.055;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .9 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");}
 @keyframes grain{0%{transform:translate(0,0)}20%{transform:translate(-3%,2%)}40%{transform:translate(2%,-4%)}60%{transform:translate(-4%,-1%)}80%{transform:translate(3%,3%)}100%{transform:translate(0,0)}}
 
@@ -78,18 +86,18 @@ body::after{content:"";position:fixed;inset:-50%;z-index:90;pointer-events:none;
   padding-top:calc(18px + env(safe-area-inset-top,0px));padding-bottom:18px;
   display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:16px;transition:transform .5s var(--ease)}
 .nav.is-hidden{transform:translateY(-110%)}
-@media (max-width:1080px){.nav{transition:transform .5s var(--ease),background .4s}.nav.is-solid{mix-blend-mode:normal;background:rgba(15,15,15,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);padding-top:calc(12px + env(safe-area-inset-top,0px));padding-bottom:12px}}
+@media (max-width:1080px){.nav{transition:transform .5s var(--ease),background .4s}.nav.is-solid{mix-blend-mode:normal;background:rgba(7,22,54,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);padding-top:calc(12px + env(safe-area-inset-top,0px));padding-bottom:12px}}
 .brand{display:flex;align-items:center;gap:12px;justify-self:start}
 .brand svg{width:30px;height:30px}
-.brand svg path{fill:currentColor}
+.brand svg path,.brand svg rect{fill:currentColor}
 .brand svg .p2{opacity:.55}.brand svg .p3{opacity:.75}.brand svg .p4{opacity:.35}
-.brand__word{font-family:var(--f-display);font-weight:500;letter-spacing:.32em;font-size:.82rem;line-height:1.1;white-space:nowrap}
-@media (max-width:480px){.brand__word small{display:none}.brand__word{letter-spacing:.22em}}
-.brand__word small{display:block;font-size:.56rem;letter-spacing:.42em;opacity:.7;font-weight:400}
+.brand__word{font-family:var(--f-display);font-weight:600;letter-spacing:.28em;font-size:.84rem;line-height:1.15;white-space:nowrap}
+@media (max-width:480px){.brand__word small{display:none}.brand__word{letter-spacing:.2em}}
+.brand__word small{display:block;font-size:.54rem;letter-spacing:.34em;opacity:.75;font-weight:400}
 .nav__pills{display:flex;gap:6px}
 .pill{display:inline-flex;align-items:center;gap:8px;height:34px;padding:0 16px;border:1px solid currentColor;border-radius:99px;font-size:.82rem;white-space:nowrap;transition:background .3s,color .3s}
 .pill:hover,.pill.is-active{background:var(--bone);color:var(--charcoal)}
-.nav__end{justify-self:end;display:flex;align-items:center;gap:20px}
+.nav__end{justify-self:end;display:flex;align-items:center;gap:14px}
 .nav__phone{font-family:var(--f-mono);font-size:.74rem;letter-spacing:.06em;user-select:all}
 .nav__burger{display:none;width:44px;height:44px;border:1px solid currentColor;border-radius:50%;place-items:center}
 .nav__burger i{display:block;width:16px;height:1px;background:currentColor;box-shadow:0 5px 0 currentColor,0 -5px 0 currentColor}
@@ -102,33 +110,41 @@ body::after{content:"";position:fixed;inset:-50%;z-index:90;pointer-events:none;
 .menu__top{display:flex;justify-content:space-between;align-items:center}
 .menu__close{width:44px;height:44px;border:1px solid currentColor;border-radius:50%;font-size:1.2rem}
 .menu ol{list-style:none;margin:0;padding:0;counter-reset:m}
-.menu li a{display:flex;align-items:baseline;gap:14px;font-family:var(--f-display);font-size:clamp(2.6rem,11vw,5rem);line-height:1.05;letter-spacing:-.03em;font-weight:500;padding:4px 0;border-bottom:1px solid var(--rule-d)}
-.menu li a span{font-family:var(--f-mono);font-size:.7rem;letter-spacing:.1em;color:var(--warm)}
+.menu li a{display:flex;align-items:baseline;gap:14px;font-family:var(--f-display);font-size:clamp(2.4rem,10vw,4.8rem);line-height:1.05;letter-spacing:-.03em;font-weight:500;padding:4px 0;border-bottom:1px solid var(--rule-d)}
+.menu li a span{font-family:var(--f-mono);font-size:.7rem;letter-spacing:.1em;color:var(--amber)}
+.menu__foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;color:var(--warm)}
 
 /* ───────── Shared bits ───────── */
 .sheet{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-block:14px;border-top:1px solid var(--rule-l);border-bottom:1px solid var(--rule-l);color:var(--ink-2)}
-.sheet b{font-weight:500;color:var(--charcoal)}
+.sheet b{font-weight:500;color:var(--royal)}
 .dark .sheet{border-color:var(--rule-d);color:var(--warm)}
-.dark .sheet b,.build .sheet b{color:var(--bone)}
+.dark .sheet b,.build .sheet b{color:var(--amber)}
 @media (max-width:620px){.sheet span:nth-child(2){display:none}}
-.btn{display:inline-flex;align-items:center;gap:16px;height:56px;padding:5px 5px 5px 24px;border-radius:99px;background:var(--bone);color:var(--charcoal);border:1px solid transparent;font-weight:500;font-size:.95rem;white-space:nowrap;transition:background .3s,color .3s}
+.btn{display:inline-flex;align-items:center;gap:16px;height:56px;padding:5px 5px 5px 24px;border-radius:99px;background:var(--bone);color:var(--charcoal);border:1px solid transparent;font-weight:500;font-size:.95rem;white-space:nowrap;transition:background .3s,color .3s,border-color .3s}
 .btn:not(:has(.btn__ico)){padding-right:24px}
-.btn__ico{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--charcoal);color:var(--bone);flex:none;transition:transform .5s var(--ease)}
+.btn__ico{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--royal);color:var(--bone);flex:none;transition:transform .5s var(--ease),background .3s}
 .btn__ico svg{width:15px;height:15px;transition:transform .5s var(--ease)}
-.btn:hover .btn__ico{transform:scale(1.06)}
+.btn:hover .btn__ico{transform:scale(1.06);background:var(--amber);color:var(--charcoal)}
 .btn:hover .btn__ico svg{transform:rotate(45deg)}
-.btn--ink{background:var(--charcoal);color:var(--bone)}
-.btn--ink .btn__ico{background:var(--bone);color:var(--charcoal)}
-.btn--line{background:transparent;color:inherit;border-color:currentColor}
+.btn--ink{background:var(--royal);color:var(--bone)}
+.btn--ink .btn__ico{background:var(--bone);color:var(--royal)}
+.btn--ink:hover{background:var(--charcoal)}
+.btn--ink:hover .btn__ico{background:var(--amber);color:var(--charcoal)}
+.btn--amber{background:var(--amber);color:var(--charcoal)}
+.btn--amber .btn__ico{background:var(--charcoal);color:var(--bone)}
+.btn--amber:hover{background:var(--bone);color:var(--charcoal)}
+.btn--line{background:rgba(7,22,54,.38);color:var(--bone);border-color:rgba(247,249,252,.42);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.btn--line .btn__ico{background:rgba(247,249,252,.14);color:var(--bone)}
 .btn--line:hover{background:var(--bone);color:var(--charcoal);border-color:var(--bone)}
-.dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--amber);box-shadow:0 0 0 0 rgba(227,163,42,.6);animation:ping 2s infinite}
-@keyframes ping{0%{box-shadow:0 0 0 0 rgba(227,163,42,.55)}80%,100%{box-shadow:0 0 0 10px rgba(227,163,42,0)}}
+.btn--line:hover .btn__ico{background:var(--royal);color:var(--bone)}
+.dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--amber);box-shadow:0 0 0 0 rgba(242,122,26,.6);animation:ping 2s infinite}
+@keyframes ping{0%{box-shadow:0 0 0 0 rgba(242,122,26,.55)}80%,100%{box-shadow:0 0 0 10px rgba(242,122,26,0)}}
 .line-mask{display:block;overflow:hidden;padding-bottom:.06em;margin-bottom:-.06em}
 .line-mask>span{display:block}
 
 /* dimension line ornament */
 .dim{display:flex;align-items:center;gap:10px;color:var(--ink-2)}
-.dim::before,.dim::after{content:"";flex:1;height:1px;background:currentColor;opacity:.5}
+.dim::before,.dim::after{content:"";flex:1;height:1px;background:currentColor;opacity:.45}
 .dim i{font-style:normal}
 .dim--v{flex-direction:column;writing-mode:vertical-rl}
 .dim--v::before,.dim--v::after{width:1px;height:auto}
@@ -142,50 +158,45 @@ body::after{content:"";position:fixed;inset:-50%;z-index:90;pointer-events:none;
 .pixels i{background:var(--to);transform-origin:bottom}
 
 /* ───────── Hero ───────── */
-.hero{position:relative;height:100svh;min-height:640px;max-height:1200px;overflow:hidden;background:#2f86e8;color:var(--bone)}
+.hero{position:relative;height:100svh;min-height:640px;max-height:1200px;overflow:hidden;background:var(--royal);color:var(--bone)}
 .hero__layer{position:absolute;inset:-4% -2% -4% -2%;will-change:transform}
-.hero__layer img{width:100%;height:100%;object-fit:cover;object-position:50% 25%}
-.hero__bg img{filter:saturate(.78) contrast(1.03)}
+.hero__layer img{width:100%;height:100%;object-fit:cover;object-position:50% 44%}
+.hero__bg img{filter:saturate(1.02) contrast(1.03)}
 .hero__cut{z-index:3}
-.hero__cut img{filter:saturate(.78) contrast(1.03)}
-.hero__mega{position:absolute;left:0;right:0;top:23%;z-index:2;display:flex;justify-content:center;will-change:transform;pointer-events:none}
-.hero__mega h2{margin:0;font-family:var(--f-display);font-size:var(--fs-mega);font-weight:600;font-variation-settings:"wdth" 116;line-height:.8;letter-spacing:-.045em;color:var(--bone);white-space:nowrap;display:flex;gap:.18em}
+.hero__cut img{filter:saturate(1.02) contrast(1.03)}
+.hero__mega{position:absolute;left:0;right:0;top:14%;z-index:2;display:flex;justify-content:center;will-change:transform;pointer-events:none}
+.hero__mega h2{margin:0;font-family:var(--f-display);font-size:var(--fs-mega);font-weight:700;font-variation-settings:"wdth" 114;line-height:.8;letter-spacing:-.04em;color:var(--bone);white-space:nowrap;display:flex;gap:.16em;text-shadow:0 12px 48px rgba(7,22,54,.28)}
 .hero__mega .wd,.footer__word .wd{display:flex}
 .hero__mega .ch{display:inline-block;overflow:hidden;padding-bottom:.04em}
 .hero__mega .ch span{display:inline-block}
-.hero__shade{position:absolute;inset:0;z-index:4;pointer-events:none;background:linear-gradient(180deg,rgba(15,15,15,.35) 0%,rgba(15,15,15,0) 22%,rgba(15,15,15,0) 50%,rgba(15,15,15,.82) 100%)}
-.hero__top{position:absolute;z-index:5;left:0;right:0;top:calc(88px + env(safe-area-inset-top,0px));display:grid;grid-template-columns:repeat(3,1fr);gap:16px;color:var(--bone)}
-.hero__top p{margin:0;font-size:.82rem;line-height:1.35}
-.hero__top p:nth-child(2){text-align:center}
-.hero__top p:nth-child(3){text-align:right}
-.hero__bottom{position:absolute;z-index:5;left:0;right:0;bottom:0;padding-bottom:calc(28px + env(safe-area-inset-bottom,0px));display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:32px;align-items:end}
-.hero__bottom h1{margin:0 0 22px;font-family:var(--f-display);font-weight:400;font-size:clamp(1.6rem,2.75vw,2.75rem);line-height:1.05;letter-spacing:-.025em;max-width:15ch;text-wrap:balance}
-.hero__bottom h1 em{font-family:var(--f-serif);font-weight:400}
+.hero__shade{position:absolute;inset:0;z-index:4;pointer-events:none;background:linear-gradient(180deg,rgba(7,22,54,.34) 0%,rgba(7,22,54,0) 24%,rgba(7,22,54,.08) 54%,rgba(7,22,54,.86) 100%)}
+.hero__bottom{position:absolute;z-index:5;left:0;right:0;bottom:0;padding-bottom:calc(28px + env(safe-area-inset-bottom,0px));display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:32px;align-items:end}
+.hero__bottom h1{margin:0 0 22px;font-family:var(--f-display);font-weight:400;font-size:clamp(1.6rem,2.75vw,2.75rem);line-height:1.05;letter-spacing:-.025em;max-width:16ch;text-wrap:balance}
+.hero__bottom h1 em{font-family:var(--f-serif);font-weight:400;color:#FFD0A6}
 .hero__cta{display:flex;gap:12px;flex-wrap:wrap}
-.hero__meta{display:flex;gap:24px;margin-top:26px;color:rgba(246,245,242,.7)}
-.hero__card{justify-self:end;display:flex;gap:14px;align-items:stretch;padding:10px;border-radius:18px;background:rgba(246,245,242,.12);border:1px solid rgba(246,245,242,.22);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);max-width:420px;transition:background .3s}
-.hero__card:hover{background:rgba(246,245,242,.2)}
-.hero__card img{width:120px;height:120px;object-fit:cover;border-radius:10px}
+.hero__meta{display:flex;gap:24px;flex-wrap:wrap;margin-top:24px;color:rgba(247,249,252,.72)}
+.hero__card{justify-self:end;display:flex;gap:14px;align-items:stretch;padding:10px;border-radius:18px;background:rgba(7,22,54,.48);border:1px solid rgba(247,249,252,.24);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);max-width:430px;transition:background .3s,border-color .3s}
+.hero__card:hover{background:rgba(14,63,169,.58);border-color:rgba(242,122,26,.65)}
+.hero__card img{width:118px;height:118px;object-fit:cover;border-radius:10px;flex:none}
 .hero__card div{display:flex;flex-direction:column;justify-content:space-between;padding:4px 6px 4px 0;min-width:0}
-.hero__card strong{font-family:var(--f-display);font-weight:500;font-size:1.15rem;letter-spacing:-.01em;line-height:1.15}
-.hero__card span{font-size:.82rem;color:rgba(246,245,242,.75)}
+.hero__card .mono{color:var(--amber)}
+.hero__card strong{font-family:var(--f-display);font-weight:500;font-size:1.12rem;letter-spacing:-.01em;line-height:1.15;color:var(--bone)}
+.hero__card span:last-child{font-size:.82rem;color:rgba(247,249,252,.78)}
 .pin{position:absolute;z-index:6;left:0;top:0;display:flex;align-items:center;gap:10px;transform:translate(-9px,-9px);pointer-events:auto}
-.pin__dot{position:relative;width:18px;height:18px;border-radius:50%;background:rgba(246,245,242,.35);border:1px solid rgba(246,245,242,.8);backdrop-filter:blur(6px)}
+.pin__dot{position:relative;width:18px;height:18px;border-radius:50%;background:rgba(247,249,252,.35);border:1px solid rgba(247,249,252,.8);backdrop-filter:blur(6px)}
 .pin__dot::after{content:"";position:absolute;inset:5px;border-radius:50%;background:var(--bone)}
-.pin__tag{padding:7px 12px;border-radius:99px;background:rgba(15,15,15,.55);border:1px solid rgba(246,245,242,.25);color:var(--bone);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);font-size:.76rem;white-space:nowrap}
+.pin__tag{padding:7px 12px;border-radius:99px;background:rgba(7,22,54,.65);border:1px solid rgba(247,249,252,.25);color:var(--bone);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);font-size:.76rem;white-space:nowrap}
 .pin__tag b{font-family:var(--f-mono);font-weight:400;font-size:.68rem;color:var(--amber);margin-left:6px;letter-spacing:.04em}
 .scrollcue{position:absolute;z-index:5;right:max(var(--pad),env(safe-area-inset-right,0px));top:50%;writing-mode:vertical-rl;color:var(--bone);display:flex;align-items:center;gap:12px}
 .scrollcue::after{content:"";width:1px;height:64px;background:currentColor;animation:cue 2.4s var(--ease) infinite;transform-origin:top}
 @keyframes cue{0%{transform:scaleY(0)}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
 @media (max-width:820px){
   .hero{height:auto;min-height:100svh;max-height:none}
-  .hero__mega{top:26%}
-  .hero__layer img{object-position:50% 25%}
+  .hero__mega{top:18%}
+  .hero__layer img{object-position:50% 42%}
   .hero__mega h2{font-size:15vw}
   .hero__meta{display:none}
   .hero__bottom h1{font-size:1.75rem}
-  .hero__top{grid-template-columns:1fr 1fr}
-  .hero__top p:nth-child(2){display:none}
   .hero__bottom{grid-template-columns:1fr}
   .hero__card{justify-self:stretch;max-width:none}
   .hero__card img{width:88px;height:88px}
@@ -196,27 +207,28 @@ body::after{content:"";position:fixed;inset:-50%;z-index:90;pointer-events:none;
 /* ───────── About ───────── */
 .about{position:relative;padding-block:clamp(72px,10vw,160px) clamp(120px,14vw,220px);background:var(--bone)}
 .statement{margin:clamp(48px,7vw,110px) 0 clamp(56px,8vw,120px);font-family:var(--f-display);font-weight:400;font-size:var(--fs-h2);line-height:1.02;letter-spacing:-.035em;max-width:17ch;text-wrap:balance}
-.statement em{font-family:var(--f-serif);font-weight:400;letter-spacing:-.02em}
+.statement em{font-family:var(--f-serif);font-weight:400;letter-spacing:-.02em;color:var(--royal)}
 .statement .w{display:inline-block}
 .about__grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(16px,2vw,28px);align-items:start}
 .fig{position:relative;margin:0;overflow:hidden;border-radius:6px;background:var(--paper-2)}
 .fig img{width:100%;height:100%;object-fit:cover;transform:scale(1.12);will-change:transform}
-.fig figcaption{position:absolute;left:12px;bottom:12px;color:var(--bone);background:rgba(15,15,15,.5);backdrop-filter:blur(8px);padding:6px 10px;border-radius:99px}
+.fig figcaption{position:absolute;left:12px;bottom:12px;color:var(--bone);background:rgba(7,22,54,.65);backdrop-filter:blur(8px);padding:6px 10px;border-radius:99px}
 .about__tall{grid-column:1 / span 4;aspect-ratio:3/4;max-width:100%}
 .about__copy{grid-column:6 / span 6;display:flex;flex-direction:column;gap:28px;padding-top:clamp(0px,4vw,60px)}
-.about__copy p{margin:0;font-size:var(--fs-lead);line-height:1.45;max-width:38ch;color:var(--ink-2)}
-.about__copy p strong{color:var(--charcoal);font-weight:500}
+.about__copy p{margin:0;font-size:var(--fs-lead);line-height:1.45;max-width:40ch;color:var(--ink-2)}
+.about__copy p strong{color:var(--charcoal);font-weight:600}
 .about__copy .btn{align-self:flex-start}
 .values{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--rule-l)}
 .values li{padding:14px 0 0;display:flex;flex-direction:column;gap:6px}
-.values li span{color:var(--warm)}
-.values li b{font-family:var(--f-display);font-weight:500;font-size:1.25rem;letter-spacing:-.02em}
+.values li span{color:var(--amber);font-weight:500}
+.values li b{font-family:var(--f-display);font-weight:500;font-size:1.18rem;letter-spacing:-.02em;color:var(--charcoal)}
 .about__wide{grid-column:5 / span 8;aspect-ratio:16/8;margin-top:clamp(24px,4vw,64px);max-width:100%}
 .about__dim{grid-column:5 / span 8;margin-top:10px}
 .stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;margin-top:clamp(64px,9vw,140px);border-top:1px solid var(--rule-l)}
 .stat{padding-top:22px;display:flex;flex-direction:column;gap:10px;min-width:0}
-.stat__n{font-family:var(--f-display);font-weight:400;font-size:clamp(3rem,7vw,7.2rem);line-height:.9;letter-spacing:-.05em;font-variant-numeric:tabular-nums;font-variation-settings:"wdth" 88}
-.stat__n sup{font-size:.4em;vertical-align:top;margin-left:2px;letter-spacing:0}
+.stat .mono{color:var(--royal)}
+.stat__n{font-family:var(--f-display);font-weight:500;font-size:clamp(3rem,7vw,6.8rem);line-height:.9;letter-spacing:-.05em;font-variant-numeric:tabular-nums;font-variation-settings:"wdth" 88;color:var(--charcoal)}
+.stat__n sup{font-size:.38em;vertical-align:top;margin-left:2px;letter-spacing:0;color:var(--amber)}
 .stat p{margin:0;color:var(--ink-2);font-size:.95rem;max-width:24ch}
 @media (max-width:900px){
   .about__tall{grid-column:1 / span 6}
@@ -235,7 +247,7 @@ body::after{content:"";position:fixed;inset:-50%;z-index:90;pointer-events:none;
 .services{position:relative;padding-block:clamp(72px,10vw,160px) clamp(120px,14vw,220px)}
 .sec-head{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:32px;align-items:end;margin:clamp(40px,6vw,90px) 0 clamp(40px,5vw,80px)}
 .sec-head h2{margin:0;font-family:var(--f-display);font-weight:400;font-size:var(--fs-h1);line-height:.92;letter-spacing:-.05em;text-wrap:balance}
-.sec-head h2 em{font-family:var(--f-serif);font-weight:400;letter-spacing:-.03em}
+.sec-head h2 em{font-family:var(--f-serif);font-weight:400;letter-spacing:-.03em;color:var(--amber)}
 .sec-head p{margin:0;color:var(--warm);font-size:var(--fs-lead);line-height:1.45;max-width:34ch;justify-self:end}
 .light .sec-head p{color:var(--ink-2)}
 @media (max-width:820px){.sec-head{grid-template-columns:1fr}.sec-head p{justify-self:start}}
@@ -243,8 +255,8 @@ body::after{content:"";position:fixed;inset:-50%;z-index:90;pointer-events:none;
 .svc__row{position:relative;border-bottom:1px solid var(--rule-d)}
 .svc__btn{position:relative;width:100%;display:grid;grid-template-columns:90px minmax(0,1fr) minmax(0,.9fr) 56px;gap:24px;align-items:center;padding:clamp(18px,2.2vw,30px) 0;text-align:left;z-index:1}
 .svc__row::before{content:"";position:absolute;inset:0;background:var(--bone);transform:scaleY(0);transform-origin:bottom;transition:transform .55s var(--ease)}
-.svc__code{color:var(--warm);transition:color .4s}
-.svc__title{font-family:var(--f-display);font-weight:400;font-size:clamp(1.9rem,4.4vw,4.4rem);line-height:1;letter-spacing:-.045em;transition:transform .55s var(--ease),color .4s}
+.svc__code{color:var(--amber);transition:color .4s}
+.svc__title{font-family:var(--f-display);font-weight:400;font-size:clamp(1.85rem,4.2vw,4.1rem);line-height:1;letter-spacing:-.045em;transition:transform .55s var(--ease),color .4s}
 .svc__desc{color:var(--warm);font-size:.98rem;max-width:40ch;transition:color .4s}
 .svc__arrow{justify-self:end;width:48px;height:48px;border-radius:50%;border:1px solid var(--rule-d);display:grid;place-items:center;transition:transform .55s var(--ease),background .4s,border-color .4s,color .4s}
 .svc__arrow svg{width:16px;height:16px}
@@ -252,11 +264,12 @@ body::after{content:"";position:fixed;inset:-50%;z-index:90;pointer-events:none;
 @media (hover:hover) and (min-width:821px){
   .svc__row:hover::before{transform:scaleY(1)}
   .svc__row:hover .svc__title{transform:translateX(18px);color:var(--charcoal)}
-  .svc__row:hover .svc__code,.svc__row:hover .svc__desc{color:var(--ink-2)}
-  .svc__row:hover .svc__arrow{background:var(--charcoal);border-color:var(--charcoal);color:var(--bone);transform:rotate(-45deg)}
+  .svc__row:hover .svc__code{color:var(--royal)}
+  .svc__row:hover .svc__desc{color:var(--ink-2)}
+  .svc__row:hover .svc__arrow{background:var(--royal);border-color:var(--royal);color:var(--bone);transform:rotate(-45deg)}
 }
 .svc-preview{position:fixed;left:0;top:0;z-index:40;width:clamp(240px,22vw,360px);aspect-ratio:4/5;pointer-events:none;border-radius:8px;overflow:hidden;
-  margin:calc(clamp(240px,22vw,360px) * -.625) 0 0 calc(clamp(240px,22vw,360px) * -.5);scale:.6;opacity:0;transition:opacity .35s,scale .5s var(--ease)}
+  margin:calc(clamp(240px,22vw,360px) * -.625) 0 0 calc(clamp(240px,22vw,360px) * -.5);scale:.6;opacity:0;transition:opacity .35s,scale .5s var(--ease);box-shadow:0 24px 60px rgba(7,22,54,.45)}
 .svc-preview.is-on{opacity:1;scale:1}
 .svc-preview img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;clip-path:inset(100% 0 0 0);transition:clip-path .6s var(--ease)}
 .svc-preview img.is-active{clip-path:inset(0 0 0 0);z-index:1}
@@ -265,7 +278,7 @@ body::after{content:"";position:fixed;inset:-50%;z-index:90;pointer-events:none;
   .svc__btn{grid-template-columns:52px minmax(0,1fr) 44px;gap:12px}
   .svc__desc{display:none}
   .svc__arrow{width:40px;height:40px}
-  .svc__row.is-open .svc__arrow{transform:rotate(90deg)}
+  .svc__row.is-open .svc__arrow{transform:rotate(90deg);border-color:var(--amber);color:var(--amber)}
   .svc__media{display:grid;grid-template-rows:0fr;transition:grid-template-rows .6s var(--ease)}
   .svc__row.is-open .svc__media{grid-template-rows:1fr}
   .svc__media>div{overflow:hidden}
@@ -274,8 +287,8 @@ body::after{content:"";position:fixed;inset:-50%;z-index:90;pointer-events:none;
 }
 
 /* ───────── Build (3D) ───────── */
-.build{position:relative;height:520vh;background:#26303a;color:var(--bone)}
-.build__sticky::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(15,15,15,.55) 0%,rgba(15,15,15,0) 42%),linear-gradient(0deg,rgba(15,15,15,.6) 0%,rgba(15,15,15,0) 26%),linear-gradient(180deg,rgba(15,15,15,.45) 0%,rgba(15,15,15,0) 22%)}
+.build{position:relative;height:520vh;background:#0c214d;color:var(--bone)}
+.build__sticky::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(7,22,54,.68) 0%,rgba(7,22,54,0) 44%),linear-gradient(0deg,rgba(7,22,54,.72) 0%,rgba(7,22,54,0) 28%),linear-gradient(180deg,rgba(7,22,54,.55) 0%,rgba(7,22,54,0) 22%)}
 .build__hud,#build-labels{z-index:2}
 #build-labels{position:absolute;inset:0;pointer-events:none}
 .build__sticky{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden}
@@ -284,17 +297,17 @@ body::after{content:"";position:fixed;inset:-50%;z-index:90;pointer-events:none;
 .build__fallback{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.5}
 .build__hud{position:absolute;inset:0;pointer-events:none;display:grid;grid-template-rows:auto 1fr auto;padding-top:calc(86px + env(safe-area-inset-top,0px));padding-bottom:calc(26px + env(safe-area-inset-bottom,0px))}
 .build__hud .sheet{border-color:var(--rule-d);color:var(--warm)}
-.build__title{margin:28px 0 0;font-family:var(--f-display);font-weight:400;font-size:clamp(2.2rem,4.6vw,4.8rem);line-height:.95;letter-spacing:-.045em;max-width:11ch}
-.build__title em{font-family:var(--f-serif);letter-spacing:-.03em}
-.stages{list-style:none;margin:0;padding:0;align-self:center;display:flex;flex-direction:column;gap:2px;max-width:340px}
-.stage{display:grid;grid-template-columns:36px 1fr;gap:4px 10px;padding:12px 0;border-top:1px solid var(--rule-d);color:rgba(246,245,242,.35);transition:color .4s}
+.build__title{margin:28px 0 0;font-family:var(--f-display);font-weight:400;font-size:clamp(2.2rem,4.6vw,4.8rem);line-height:.95;letter-spacing:-.045em;max-width:12ch}
+.build__title em{font-family:var(--f-serif);letter-spacing:-.03em;color:#FFD0A6}
+.stages{list-style:none;margin:0;padding:0;align-self:center;display:flex;flex-direction:column;gap:2px;max-width:360px}
+.stage{display:grid;grid-template-columns:36px 1fr;gap:4px 10px;padding:12px 0;border-top:1px solid var(--rule-d);color:rgba(247,249,252,.38);transition:color .4s}
 .stage:last-child{border-bottom:1px solid var(--rule-d)}
-.stage b{font-family:var(--f-display);font-weight:500;font-size:1.15rem;letter-spacing:-.015em}
+.stage b{font-family:var(--f-display);font-weight:500;font-size:1.12rem;letter-spacing:-.015em}
 .stage p{grid-column:2;margin:0;font-size:.88rem;line-height:1.45;max-height:0;overflow:hidden;opacity:0;transition:max-height .6s var(--ease),opacity .4s}
 .stage.is-active{color:var(--bone)}
-.stage.is-active p{max-height:90px;opacity:.75}
+.stage.is-active p{max-height:96px;opacity:.82}
 .stage.is-active .mono{color:var(--amber)}
-.stage.is-done{color:rgba(246,245,242,.6)}
+.stage.is-done{color:rgba(247,249,252,.65)}
 .readout{display:grid;grid-template-columns:repeat(3,auto) 1fr;gap:clamp(18px,3vw,48px);align-items:end}
 .readout div{display:flex;flex-direction:column;gap:6px;color:var(--warm)}
 .readout strong{font-family:var(--f-display);font-weight:400;font-size:clamp(1.6rem,2.8vw,2.8rem);line-height:1;letter-spacing:-.03em;color:var(--bone);font-variant-numeric:tabular-nums}
@@ -329,29 +342,30 @@ body::after{content:"";position:fixed;inset:-50%;z-index:90;pointer-events:none;
 .projects{position:relative;padding-block:clamp(72px,10vw,150px) clamp(72px,9vw,140px)}
 .projects__head{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:32px;align-items:end;margin:clamp(40px,6vw,90px) 0 clamp(32px,4vw,64px)}
 .projects__head h2{margin:0;font-family:var(--f-display);font-weight:400;font-size:var(--fs-h1);line-height:.92;letter-spacing:-.05em;text-wrap:balance}
-.projects__head h2 em{font-family:var(--f-serif);letter-spacing:-.03em}
-.projects__head p{margin:0;justify-self:end;max-width:32ch;color:var(--ink-2);font-size:var(--fs-lead);line-height:1.45}
+.projects__head h2 em{font-family:var(--f-serif);letter-spacing:-.03em;color:var(--royal)}
+.projects__head p{margin:0;justify-self:end;max-width:34ch;color:var(--ink-2);font-size:var(--fs-lead);line-height:1.45}
 .stack{display:flex;flex-direction:column;gap:clamp(24px,4vh,48px)}
 .pcard{position:sticky;top:calc(84px + env(safe-area-inset-top,0px) + var(--i) * 12px);transform-origin:50% 0;will-change:transform}
-.pcard__in{position:relative;display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);height:min(76vh,720px);border-radius:14px;overflow:hidden;background:var(--paper-2);border:1px solid var(--rule-l);box-shadow:0 -18px 40px -24px rgba(15,15,15,.25)}
-.pcard:nth-child(even) .pcard__in{background:var(--charcoal);color:var(--bone);border-color:var(--charcoal)}
+.pcard__in{position:relative;display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);height:min(76vh,720px);border-radius:14px;overflow:hidden;background:var(--paper-2);border:1px solid var(--rule-l);box-shadow:0 -18px 40px -24px rgba(7,22,54,.25)}
+.pcard:nth-child(even) .pcard__in{background:var(--charcoal);color:var(--bone);border-color:var(--night-2)}
 .pcard__in::after{content:"";position:absolute;inset:0;background:var(--charcoal);opacity:var(--dim,0);pointer-events:none;transition:opacity .1s}
 .pcard__img{position:relative;overflow:hidden;min-height:0}
 .pcard__img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease)}
 .pcard__in:hover .pcard__img img{transform:scale(1.04)}
 .pcard__body{display:flex;flex-direction:column;gap:20px;padding:clamp(22px,3vw,44px);min-width:0}
-.pcard__top{display:flex;justify-content:space-between;gap:12px;color:var(--warm)}
-.pcard h3{margin:auto 0 0;font-family:var(--f-display);font-weight:400;font-size:clamp(2rem,3.6vw,3.8rem);line-height:.95;letter-spacing:-.045em;text-wrap:balance}
+.pcard h3{margin:auto 0 0;font-family:var(--f-display);font-weight:500;font-size:clamp(2rem,3.4vw,3.4rem);line-height:.96;letter-spacing:-.04em;text-wrap:balance}
 .pcard p{margin:0;color:var(--ink-2);max-width:36ch}
 .pcard:nth-child(even) p{color:var(--warm)}
 .pcard__specs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 20px;margin:0;padding-top:18px;border-top:1px solid var(--rule-l)}
 .pcard:nth-child(even) .pcard__specs{border-color:var(--rule-d)}
-.pcard__specs dt{color:var(--warm);margin-bottom:2px}
+.pcard__specs dt{color:var(--ink-2);opacity:.72;margin-bottom:2px}
+.pcard:nth-child(even) .pcard__specs dt{color:var(--warm);opacity:1}
 .pcard__specs dd{margin:0;font-weight:500}
-.pcard__link{display:inline-flex;align-items:center;gap:10px;font-weight:500}
+.pcard__link{display:inline-flex;align-items:center;gap:10px;font-weight:500;color:var(--royal)}
+.pcard:nth-child(even) .pcard__link{color:var(--amber)}
 .pcard__link svg{width:14px;height:14px;transition:transform .5s var(--ease)}
 .pcard__in:hover .pcard__link svg{transform:rotate(45deg)}
-.projects__more{display:flex;justify-content:center;margin-top:clamp(40px,6vw,80px)}
+.projects__more{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:clamp(40px,6vw,80px)}
 @media (max-width:820px){
   .projects__head{grid-template-columns:1fr}.projects__head p{justify-self:start}
   .pcard{position:relative;top:auto;transform:none!important}
@@ -366,17 +380,17 @@ body::after{content:"";position:fixed;inset:-50%;z-index:90;pointer-events:none;
 .field__sticky{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;display:grid;place-items:center}
 .field__img{position:absolute;inset:0;clip-path:inset(18% 26% round 10px);will-change:clip-path}
 .field__img img{width:100%;height:100%;object-fit:cover;transform:scale(1.25);will-change:transform}
-.field__img::after{content:"";position:absolute;inset:0;background:rgba(15,15,15,.45);opacity:var(--o,0)}
+.field__img::after{content:"";position:absolute;inset:0;background:rgba(7,22,54,.58);opacity:var(--o,0)}
 .field__text{position:relative;z-index:2;text-align:center;color:var(--bone);opacity:var(--o,0);transform:translateY(calc((1 - var(--o,0)) * 40px))}
 .field__text h2{margin:0 auto;font-family:var(--f-display);font-weight:400;font-size:var(--fs-h2);line-height:.98;letter-spacing:-.045em;max-width:15ch;text-wrap:balance}
-.field__text h2 em{font-family:var(--f-serif);letter-spacing:-.03em}
-.field__text p{margin:22px auto 0;max-width:46ch;opacity:.8}
+.field__text h2 em{font-family:var(--f-serif);letter-spacing:-.03em;color:#FFD0A6}
+.field__text p{margin:22px auto 0;max-width:46ch;opacity:.86}
 .field__corners{position:absolute;inset:18% 26%;z-index:2;pointer-events:none;color:var(--charcoal);opacity:calc(1 - var(--o,0))}
 .field__corners span{position:absolute;white-space:nowrap}
 .field__corners span:nth-child(1){left:0;top:-26px}
 .field__corners span:nth-child(2){right:0;bottom:-26px}
 
-/* ───────── Testimonials ───────── */
+/* ───────── Pillars / Standards ───────── */
 .voices{position:relative;padding-block:clamp(72px,10vw,150px) clamp(120px,14vw,220px)}
 .voices__grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2.2fr);gap:clamp(24px,5vw,90px);margin-top:clamp(40px,6vw,90px)}
 .voices__side{display:flex;flex-direction:column;justify-content:space-between;gap:24px}
@@ -384,46 +398,49 @@ body::after{content:"";position:fixed;inset:-50%;z-index:90;pointer-events:none;
 .voices__img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .8s var(--ease),transform 1.4s var(--ease);transform:scale(1.08)}
 .voices__img img.is-active{opacity:1;transform:scale(1)}
 .voices__nav{display:flex;gap:10px;align-items:center}
-.voices__nav button{width:52px;height:52px;border-radius:50%;border:1px solid var(--rule-l);display:grid;place-items:center;transition:background .3s,color .3s}
-.voices__nav button:hover{background:var(--charcoal);color:var(--bone)}
+.voices__nav button{width:52px;height:52px;border-radius:50%;border:1px solid var(--rule-l);display:grid;place-items:center;transition:background .3s,color .3s,border-color .3s}
+.voices__nav button:hover{background:var(--royal);border-color:var(--royal);color:var(--bone)}
 .voices__nav button svg{width:16px;height:16px}
 .voices__nav span{margin-left:10px;font-variant-numeric:tabular-nums;color:var(--ink-2)}
 .quote{display:none;margin:0}
 .quote.is-active{display:block;animation:qIn .9s var(--ease)}
 @keyframes qIn{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
-.quote blockquote{margin:0;font-family:var(--f-display);font-weight:400;font-size:clamp(1.7rem,3.4vw,3.5rem);line-height:1.08;letter-spacing:-.035em;text-wrap:balance}
-.quote blockquote::before{content:"“";display:block;font-family:var(--f-serif);font-size:2.4em;line-height:.6;color:var(--amber);margin-bottom:.1em}
+.quote blockquote{margin:0;font-family:var(--f-display);font-weight:400;font-size:clamp(1.7rem,3.3vw,3.35rem);line-height:1.08;letter-spacing:-.035em;text-wrap:balance;color:var(--charcoal)}
+.quote blockquote::before{content:"//";display:block;font-family:var(--f-mono);font-size:.34em;letter-spacing:.12em;line-height:1;color:var(--amber);margin-bottom:.75em}
 .quote figcaption{margin-top:36px;display:flex;gap:16px;align-items:center;padding-top:20px;border-top:1px solid var(--rule-l)}
-.quote figcaption b{font-weight:500;display:block}
+.quote figcaption b{font-weight:600;display:block;color:var(--royal)}
 .quote figcaption span{color:var(--ink-2);font-size:.92rem}
-.quote figcaption .mono{margin-left:auto;color:var(--warm)}
+.quote figcaption .mono{margin-left:auto;color:var(--ink-2)}
 @media (max-width:820px){.voices__grid{grid-template-columns:1fr}.voices__img{display:none}.quote figcaption{flex-wrap:wrap}.quote figcaption .mono{margin-left:0}}
 
 /* ───────── Contact ───────── */
 .contact{position:relative;padding-block:clamp(72px,10vw,150px) clamp(48px,6vw,90px)}
 .contact__grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(32px,6vw,110px);margin-top:clamp(40px,6vw,90px)}
 .contact h2{margin:0;font-family:var(--f-display);font-weight:400;font-size:var(--fs-h1);line-height:.9;letter-spacing:-.055em}
-.contact h2 em{font-family:var(--f-serif);letter-spacing:-.03em}
-.contact__details{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:28px;color:var(--warm);font-size:.95rem}
-.contact__details b{display:block;color:var(--bone);font-weight:500;user-select:all}
+.contact h2 em{font-family:var(--f-serif);letter-spacing:-.03em;color:var(--amber)}
+.contact__details{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:32px;color:var(--warm);font-size:.95rem}
+.contact__details b,.contact__details a{display:block;color:var(--bone);font-weight:500;margin-top:4px;transition:color .25s}
+.contact__details a:hover{color:var(--amber)}
+.contact__wa{margin-top:32px}
 .form{display:flex;flex-direction:column;gap:26px}
 .field-i{display:flex;flex-direction:column;gap:8px}
 .field-i label,.legend{color:var(--warm)}
-.field-i input,.field-i textarea,.field-i select{font:inherit;color:var(--bone);background:transparent;border:0;border-bottom:1px solid var(--rule-d);padding:10px 0 12px;border-radius:0;font-size:1.15rem;transition:border-color .3s}
-.field-i select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--warm) 50%),linear-gradient(135deg,var(--warm) 50%,transparent 50%);background-position:calc(100% - 14px) 55%,calc(100% - 8px) 55%;background-size:6px 6px;background-repeat:no-repeat}
+.field-i input,.field-i textarea,.field-i select{font:inherit;color:var(--bone);background:transparent;border:0;border-bottom:1px solid var(--rule-d);padding:10px 0 12px;border-radius:0;font-size:1.12rem;transition:border-color .3s}
+.field-i select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--amber) 50%),linear-gradient(135deg,var(--amber) 50%,transparent 50%);background-position:calc(100% - 14px) 55%,calc(100% - 8px) 55%;background-size:6px 6px;background-repeat:no-repeat}
 .field-i select option{background:var(--charcoal);color:var(--bone)}
 .field-i textarea{resize:vertical;min-height:90px}
 .field-i input:focus,.field-i textarea:focus,.field-i select:focus{outline:none;border-color:var(--amber)}
-.field-i input::placeholder,.field-i textarea::placeholder{color:#5f5f5a}
+.field-i input::placeholder,.field-i textarea::placeholder{color:#5e7296}
 .chips{display:flex;gap:8px;flex-wrap:wrap;border:0;margin:0;padding:0}
 .chips legend{margin-bottom:12px;padding:0}
 .chip input{position:absolute;opacity:0;pointer-events:none}
 .chip span{display:inline-flex;align-items:center;height:40px;padding:0 16px;border:1px solid var(--rule-d);border-radius:99px;font-size:.9rem;cursor:pointer;transition:background .3s,color .3s,border-color .3s}
-.chip input:checked+span{background:var(--bone);color:var(--charcoal);border-color:var(--bone)}
+.chip input:checked+span{background:var(--amber);color:var(--charcoal);border-color:var(--amber);font-weight:500}
 .chip input:focus-visible+span{outline:2px solid var(--amber);outline-offset:2px}
 .form__row{display:grid;grid-template-columns:1fr 1fr;gap:24px}
-.form__note{margin:0;color:var(--warm);font-size:.9rem;min-height:1.4em}
+.form__note{margin:0;color:var(--warm);font-size:.92rem;min-height:1.4em}
 .form__note.is-ok{color:var(--amber)}
+.form__note a{text-decoration:underline;text-underline-offset:3px;color:var(--bone);font-weight:500}
 .form .btn{align-self:flex-start}
 @media (max-width:900px){.contact__grid{grid-template-columns:1fr}.form__row{grid-template-columns:1fr}}
 
@@ -433,35 +450,33 @@ body::after{content:"";position:fixed;inset:-50%;z-index:90;pointer-events:none;
 .footer__cols h3{margin:0 0 14px;color:var(--bone)}
 .footer__cols ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
 .footer__cols a{transition:color .3s}
-.footer__cols a:hover{color:var(--bone)}
-.footer__values{font-family:var(--f-display);font-size:clamp(1.3rem,2vw,1.9rem);line-height:1.1;letter-spacing:-.02em;color:var(--bone);margin:0}
-.footer__values span{color:var(--warm)}
-.footer__word{margin:clamp(40px,6vw,90px) 0 0;font-family:var(--f-display);font-weight:600;font-variation-settings:"wdth" 104;font-size:19.4vw;line-height:.74;letter-spacing:-.06em;white-space:nowrap;color:var(--bone);display:flex;gap:.18em;justify-content:center;overflow:hidden;padding-top:.04em}
+.footer__cols a:hover{color:var(--amber)}
+.footer__values{font-family:var(--f-display);font-size:clamp(1.3rem,2vw,1.9rem);line-height:1.12;letter-spacing:-.02em;color:var(--bone);margin:0}
+.footer__values span{color:var(--amber)}
+.footer__word{margin:clamp(40px,6vw,90px) 0 0;font-family:var(--f-display);font-weight:700;font-variation-settings:"wdth" 104;font-size:19.4vw;line-height:.74;letter-spacing:-.055em;white-space:nowrap;color:var(--bone);display:flex;gap:.18em;justify-content:center;overflow:hidden;padding-top:.04em}
 .footer__word .ch{display:inline-block}
-
 .footer__base{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:24px;color:var(--warm)}
+.footer__base a:hover{color:var(--amber)}
 @media (max-width:820px){.footer__cols{grid-template-columns:1fr 1fr}.footer__cols>div:first-child{grid-column:1 / -1}}
 
 @media (max-width:600px){
   .nav__end .pill{display:none}
   .hero__card{display:none}
-  .hero__top{top:calc(80px + env(safe-area-inset-top,0px))}
-  .hero__top p{font-size:.74rem}
   .hero__bottom{padding-bottom:calc(32px + env(safe-area-inset-bottom,0px))}
-  .hero__bottom h1{font-size:1.85rem;max-width:14ch}
+  .hero__bottom h1{font-size:1.85rem;max-width:15ch}
   .btn{height:52px;padding-left:20px;gap:12px}.btn--line{padding:0 20px}.btn__ico{width:42px;height:42px}
   .statement{font-size:2.15rem;margin-block:40px 48px}
   .about__copy p{font-size:1.05rem}
   .stat__n{font-size:3.2rem}
-  .values li b{font-size:1.1rem}
+  .values li b{font-size:1.08rem}
   .sec-head h2,.projects__head h2,.contact h2{font-size:2.8rem}
   .svc__title{font-size:1.6rem}
   .pcard__body{padding:22px}
-  .pcard h3{font-size:2rem}
+  .pcard h3{font-size:1.95rem}
   .field{height:180vh}
   .field__text h2{font-size:2.2rem}
   .field__corners{display:none}
-  .quote blockquote{font-size:1.6rem}
+  .quote blockquote{font-size:1.55rem}
   .contact__details{grid-template-columns:1fr}
   .chip span{height:38px;padding:0 14px;font-size:.85rem}
   .footer__cols{gap:28px 16px}
@@ -479,65 +494,67 @@ body::after{content:"";position:fixed;inset:-50%;z-index:90;pointer-events:none;
 
 <!-- Header -->
 <header class="nav wrap" id="nav">
-  <a class="brand" href="#top" aria-label="Axen Form, back to top">
-    <svg viewBox="0 0 100 100" aria-hidden="true"><path class="p1" d="M56 2 94 98 56 98Z"/><path class="p2" d="M56 2 56 56 34 56Z"/><path class="p3" d="M34 56 8 98 34 98Z"/><path class="p4" d="M34 56H56V98H34Z"/></svg>
-    <span class="brand__word">AXEN FORM<small>DESIGN &amp; BUILD</small></span>
+  <a class="brand" href="#top" aria-label="Procare Cladding & Signage Place, back to top">
+    <svg viewBox="0 0 100 100" aria-hidden="true">
+      <path class="p1" d="M12 8h44c19 0 32 11 32 29S75 66 56 66H34v26H12V8Zm22 18v22h20c8 0 13-4 13-11s-5-11-13-11H34Z"/>
+      <path class="p2" d="M56 72h32v20H56Z"/>
+      <path class="p3" d="M38 72h14v20H38Z"/>
+    </svg>
+    <span class="brand__word">PROCARE<small>CLADDING &amp; SIGNAGE</small></span>
   </a>
   <nav class="nav__pills" aria-label="Primary">
-    <a class="pill" href="#studio">Studio</a>
+    <a class="pill" href="#about">Company</a>
     <a class="pill" href="#services">Services</a>
-    <a class="pill" href="#process">Process</a>
+    <a class="pill" href="#process">Build Sequence</a>
     <a class="pill" href="#projects">Projects</a>
-    <a class="pill" href="in-development.html">Journal</a>
+    <a class="pill" href="in-development.html">Catalogue</a>
   </nav>
   <div class="nav__end">
-    <a class="pill" href="#contact" data-cursor-link>Start a project ↗</a>
+    <a class="nav__phone" href="tel:+2349028399853">+234 902 839 9853</a>
+    <a class="pill" href="#contact" data-cursor-link>Request a quote ↗</a>
     <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><i></i></button>
   </div>
 </header>
 
 <div class="menu wrap" id="menu" aria-hidden="true">
-  <div class="menu__top"><span class="mono">Index · Sheet 00</span><button class="menu__close" id="menu-close" aria-label="Close menu">✕</button></div>
+  <div class="menu__top"><span class="mono">Index · Sheet 00 · RC 1990397</span><button class="menu__close" id="menu-close" aria-label="Close menu">✕</button></div>
   <ol>
-    <li><a href="#studio"><span>A-101</span>Studio</a></li>
+    <li><a href="#about"><span>A-101</span>Company</a></li>
     <li><a href="#services"><span>A-201</span>Services</a></li>
-    <li><a href="#process"><span>S-301</span>Process</a></li>
+    <li><a href="#process"><span>S-301</span>Build Sequence</a></li>
     <li><a href="#projects"><span>A-401</span>Projects</a></li>
-    <li><a href="in-development.html"><span>X-000</span>Journal</a></li>
+    <li><a href="in-development.html"><span>X-000</span>Catalogue</a></li>
     <li><a href="#contact"><span>A-601</span>Contact</a></li>
   </ol>
-  <p class="mono">studio@axenform.co</p>
+  <div class="menu__foot mono">
+    <span>Lagos · Ibadan · Nationwide</span>
+    <a href="https://api.whatsapp.com/send?phone=2349028399853" target="_blank" rel="noopener">WhatsApp +234 902 839 9853 ↗</a>
+  </div>
 </div>
 
 <main id="top">
 <!-- ───────── Hero ───────── -->
 <section class="hero" id="hero" aria-label="Introduction">
-  <div class="hero__layer hero__bg" data-depth="0.25"><img src="assets/hero.webp" srcset="assets/hero-1200.webp 1200w, assets/hero.webp 2400w" sizes="(max-width: 820px) 300vw, 100vw" alt="Two-storey timber-framed homes under construction on a new street" fetchpriority="high"></div>
-  <div class="hero__mega" id="hero-mega" aria-hidden="true"><h2 class="split-chars">AXEN FORM</h2></div>
-  <div class="hero__layer hero__cut" data-depth="0.6" aria-hidden="true"><img src="assets/hero-cut.webp" srcset="assets/hero-cut-1200.webp 1200w, assets/hero-cut.webp 2400w" sizes="(max-width: 820px) 300vw, 100vw" alt="" fetchpriority="high"></div>
+  <div class="hero__layer hero__bg" data-depth="0.25"><img src="assets/procare-hero.jpg" alt="Modern Nigerian commercial building clad in royal navy and brushed silver architectural panels with warm bronze trim and steel entrance canopy" fetchpriority="high"></div>
+  <div class="hero__mega" id="hero-mega" aria-hidden="true"><h2 class="split-chars">PROCARE</h2></div>
+  <div class="hero__layer hero__cut" data-depth="0.6" aria-hidden="true"><img src="assets/procare-hero-cut.png" alt="" fetchpriority="high"></div>
   <div class="hero__shade"></div>
-
-  <div class="hero__top wrap">
-    <p>Design &amp; build<br>London &amp; South East</p>
-    <p>Est. 2016<br>48 buildings</p>
-    <p>4 live<br>sites</p>
-  </div>
-
 
   <div class="hero__bottom wrap">
     <div>
-      <h1>We design and build places to <em>live, work</em> and gather.</h1>
+      <h1>We build, clad and <em>illuminate</em> commercial spaces.</h1>
       <div class="hero__cta">
-        <a class="btn" href="#contact" data-cursor-link><span class="btn__txt">Start a project</span><span class="btn__ico"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 13 13 3M5 3h8v8"/></svg></span></a>
+        <a class="btn btn--amber" href="#contact" data-cursor-link><span class="btn__txt">Request a quote</span><span class="btn__ico"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 13 13 3M5 3h8v8"/></svg></span></a>
+        <a class="btn btn--line" href="https://api.whatsapp.com/send?phone=2349028399853" target="_blank" rel="noopener" data-cursor-link><span class="btn__txt">Chat on WhatsApp</span><span class="btn__ico"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 13 13 3M5 3h8v8"/></svg></span></a>
       </div>
-      <div class="hero__meta mono"><span>51.5072° N</span><span>0.1276° W</span><span>Sheet A-000</span></div>
+      <div class="hero__meta mono"><span>Lagos 6.52° N</span><span>Ibadan 7.38° N</span><span>RC: 1990397</span><span>Sheet A-000</span></div>
     </div>
     <a class="hero__card" href="#projects" data-cursor="View">
-      <img src="assets/frame-open.webp" alt="Timber frame rising on a new slab">
+      <img src="assets/frame-open.webp" alt="Representative commercial construction and facade work">
       <div>
-        <span class="mono">On site · Week 18 of 40</span>
-        <strong>Harrow Lane Residences</strong>
-        <span>8 timber-frame homes, Surrey</span>
+        <span class="mono">Lagos · Ibadan · Nationwide</span>
+        <strong>Cladding, Signages &amp; Builders</strong>
+        <span>Storefront facades, 3D illuminated signs &amp; structural builds</span>
       </div>
     </a>
   </div>
@@ -545,86 +562,86 @@ body::after{content:"";position:fixed;inset:-50%;z-index:90;pointer-events:none;
 </section>
 
 <!-- ───────── About ───────── -->
-<section class="about wrap" id="studio">
-  <header class="sheet mono"><span><b>A-101</b> · Studio</span><span>Drawn by: the people who build it</span><span>Rev. C · 2026</span></header>
-  <p class="statement" id="statement">One team designs it, prices it and builds it, so the drawings and the building <em>match</em> on handover day.</p>
+<section class="about wrap" id="about">
+  <header class="sheet mono"><span><b>A-101</b> · Company</span><span>Procare Cladding &amp; Signage Place · RC 1990397</span><span>Est. 2017</span></header>
+  <p class="statement" id="statement">From structural builds to architectural cladding and illuminated signages, one crew takes your building from bare frame to <em>unmistakable landmark.</em></p>
   <div class="about__grid">
     <figure class="fig about__tall" data-parallax>
-      <img decoding="async" src="assets/crew-scaffold.webp" alt="Three site operatives fixing reinforcement above a scaffold deck" loading="lazy">
+      <img decoding="async" src="assets/crew-scaffold.webp" alt="Representative site crew working at height on scaffolding" loading="lazy">
     </figure>
     <div class="about__copy">
-      <p><strong>Axen Form started in 2016 as three carpenters and an architect sharing a yard in Deptford.</strong> We now run a team of 24 across design, estimating and site, and we still don't subcontract the work we're known for: frames, carpentry and the final fix.</p>
-      <p>Clients get one contract, one programme and one person who answers the phone from the first sketch to the last snag.</p>
+      <p><strong>Operating since 2017 across Lagos and Ibadan, Procare Cladding &amp; Signage Place (RC: 1990397) brings building construction, exterior cladding, 3D signages and metal works under one roof.</strong></p>
+      <p>Working alongside our multimedia annex <strong>Procare Multimedia</strong> and our <strong>Procare Builders</strong> division, we mobilise nationwide so commercial owners, developers and brands deal with one accountable team from site prep to final signage illumination.</p>
       <ul class="values">
-        <li><span class="mono">01</span><b>People</b></li>
-        <li><span class="mono">02</span><b>Places</b></li>
-        <li><span class="mono">03</span><b>Perspective</b></li>
-        <li><span class="mono">04</span><b>Always</b></li>
+        <li><span class="mono">01</span><b>Construction</b></li>
+        <li><span class="mono">02</span><b>Cladding</b></li>
+        <li><span class="mono">03</span><b>Signages</b></li>
+        <li><span class="mono">04</span><b>Metal Works</b></li>
       </ul>
-      <a class="btn btn--ink" href="in-development.html" data-cursor-link><span class="btn__txt">Meet the studio</span><span class="btn__ico"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 13 13 3M5 3h8v8"/></svg></span></a>
+      <a class="btn btn--ink" href="in-development.html" data-cursor-link><span class="btn__txt">Meet the company</span><span class="btn__ico"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 13 13 3M5 3h8v8"/></svg></span></a>
     </div>
     <figure class="fig about__wide" data-parallax>
-      <img decoding="async" src="assets/crew-interior.webp" alt="Carpenters in hi-vis vests fitting door linings inside a plastered shell" loading="lazy">
+      <img decoding="async" src="assets/crew-interior.webp" alt="Representative interior finishing and installation crew on site" loading="lazy">
     </figure>
-    <div class="about__dim dim mono"><i>14 400 mm · typical residential bay, setting-out to finished face</i></div>
+    <div class="about__dim dim mono"><i>Lagos · Ibadan · Available to travel nationwide · CAC Registered RC 1990397</i></div>
   </div>
   <div class="stats">
-    <div class="stat"><span class="mono">Years on site</span><span class="stat__n" data-count="10">0</span><p>Founded 2016 in Deptford, south-east London.</p></div>
-    <div class="stat"><span class="mono">Buildings handed over</span><span class="stat__n"><span data-count="48">0</span></span><p>Homes, schools, workplaces and retrofits.</p></div>
-    <div class="stat"><span class="mono">Floor area built</span><span class="stat__n"><span data-count="210">0</span><sup>k ft²</sup></span><p>Gross internal area delivered since 2016.</p></div>
-    <div class="stat"><span class="mono">RIDDOR incidents, 2025</span><span class="stat__n" data-count="0">0</span><p>Across 86,000 hours worked on our sites.</p></div>
+    <div class="stat"><span class="mono">Operating since</span><span class="stat__n" data-count="2017">2017</span><p>CAC registered business (RC: 1990397) with Lagos &amp; Ibadan operations.</p></div>
+    <div class="stat"><span class="mono">Core divisions</span><span class="stat__n" data-count="4">0</span><p>Building construction, cladding, signages &amp; custom metal works.</p></div>
+    <div class="stat"><span class="mono">Operational hubs</span><span class="stat__n" data-count="2">0</span><p>Lagos and Ibadan teams available to travel across Nigeria.</p></div>
+    <div class="stat"><span class="mono">Brand community</span><span class="stat__n"><span data-count="52.7" data-dec="1">0</span><sup>K</sup></span><p>Clients, builders and commercial owners following our work.</p></div>
   </div>
   <div class="pixels" data-to="var(--charcoal)"></div>
 </section>
 
 <!-- ───────── Services ───────── -->
 <section class="services dark wrap" id="services">
-  <header class="sheet mono"><span><b>A-201</b> · Services</span><span>Six disciplines, one contract</span><span>Scale 1:50</span></header>
+  <header class="sheet mono"><span><b>A-201</b> · Services</span><span>Six disciplines, one accountable contractor</span><span>Scale 1:50</span></header>
   <div class="sec-head">
-    <h2>From bare ground to <em>keys in hand.</em></h2>
-    <p>Pick one service or hand us the whole job. Either way, the same site manager stays with you until handover.</p>
+    <h2>From bare plot to <em>lit storefront.</em></h2>
+    <p>Engage us for a standalone 3D sign, a full ACP facade transformation, or complete commercial construction.</p>
   </div>
   <ul class="svc" id="svc">
-    <li class="svc__row" data-img="0"><button class="svc__btn" aria-expanded="false"><span class="svc__code mono">SV-01</span><span class="svc__title">Design &amp; Build</span><span class="svc__desc">One contract from first sketch to handover. Our architects and site managers plan the building at the same table.</span><span class="svc__arrow"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 8h12M9 3l5 5-5 5"/></svg></span></button>
-      <div class="svc__media"><div><p>One contract from first sketch to handover. Our architects and site managers plan the building at the same table.</p><img decoding="async" src="assets/sheathed-house.webp" alt="Sheathed timber house with roof underlay" loading="lazy"></div></div></li>
-    <li class="svc__row" data-img="1"><button class="svc__btn" aria-expanded="false"><span class="svc__code mono">SV-02</span><span class="svc__title">New Homes</span><span class="svc__desc">Timber-frame and masonry homes, from single plots to 20-home schemes, built to Future Homes Standard.</span><span class="svc__arrow"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 8h12M9 3l5 5-5 5"/></svg></span></button>
-      <div class="svc__media"><div><p>Timber-frame and masonry homes, from single plots to 20-home schemes, built to Future Homes Standard.</p><img decoding="async" src="assets/frame-row-b.webp" alt="Row of two-storey timber-framed homes" loading="lazy"></div></div></li>
-    <li class="svc__row" data-img="2"><button class="svc__btn" aria-expanded="false"><span class="svc__code mono">SV-03</span><span class="svc__title">Commercial &amp; Mixed-use</span><span class="svc__desc">Concrete and steel frames for offices, retail podiums and residential blocks up to five storeys.</span><span class="svc__arrow"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 8h12M9 3l5 5-5 5"/></svg></span></button>
-      <div class="svc__media"><div><p>Concrete and steel frames for offices, retail podiums and residential blocks up to five storeys.</p><img decoding="async" src="assets/crew-slab.webp" alt="Workers on a concrete deck supported by props" loading="lazy"></div></div></li>
-    <li class="svc__row" data-img="3"><button class="svc__btn" aria-expanded="false"><span class="svc__code mono">SV-04</span><span class="svc__title">Restoration &amp; Retrofit</span><span class="svc__desc">Strip-outs, structural repair and deep energy retrofit for buildings worth keeping.</span><span class="svc__arrow"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 8h12M9 3l5 5-5 5"/></svg></span></button>
-      <div class="svc__media"><div><p>Strip-outs, structural repair and deep energy retrofit for buildings worth keeping.</p><img decoding="async" src="assets/demolition.webp" alt="Building opened in section during strip-out" loading="lazy"></div></div></li>
-    <li class="svc__row" data-img="4"><button class="svc__btn" aria-expanded="false"><span class="svc__code mono">SV-05</span><span class="svc__title">Interiors &amp; Fit-out</span><span class="svc__desc">First fix to final snag: services, joinery, finishes and the commissioning paperwork.</span><span class="svc__arrow"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 8h12M9 3l5 5-5 5"/></svg></span></button>
-      <div class="svc__media"><div><p>First fix to final snag: services, joinery, finishes and the commissioning paperwork.</p><img decoding="async" src="assets/interior-crew.webp" alt="Carpenters working inside an open timber frame" loading="lazy"></div></div></li>
-    <li class="svc__row" data-img="5"><button class="svc__btn" aria-expanded="false"><span class="svc__code mono">SV-06</span><span class="svc__title">Groundworks</span><span class="svc__desc">Site clearance, piling, drainage and foundations, planned around your neighbours.</span><span class="svc__arrow"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 8h12M9 3l5 5-5 5"/></svg></span></button>
-      <div class="svc__media"><div><p>Site clearance, piling, drainage and foundations, planned around your neighbours.</p><img decoding="async" src="assets/frame-open.webp" alt="Timber frame rising on a new slab" loading="lazy"></div></div></li>
+    <li class="svc__row" data-img="0" data-chip="t-build"><button class="svc__btn" aria-expanded="false"><span class="svc__code mono">SV-01</span><span class="svc__title">Building Construction</span><span class="svc__desc">Residential, commercial and industrial builds delivered by Procare Builders — from site prep to structural handover.</span><span class="svc__arrow"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 8h12M9 3l5 5-5 5"/></svg></span></button>
+      <div class="svc__media"><div><p>Residential, commercial and industrial builds delivered by Procare Builders — from site prep to structural handover.</p><img decoding="async" src="assets/crew-slab.webp" alt="Representative commercial structural deck and site crew" loading="lazy"></div></div></li>
+    <li class="svc__row" data-img="1" data-chip="t-clad"><button class="svc__btn" aria-expanded="false"><span class="svc__code mono">SV-02</span><span class="svc__title">Facade Cladding</span><span class="svc__desc">Aluminium Composite Panel (ACP) cladding, architectural exterior wraps and weather-tight commercial elevations.</span><span class="svc__arrow"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 8h12M9 3l5 5-5 5"/></svg></span></button>
+      <div class="svc__media"><div><p>Aluminium Composite Panel (ACP) cladding, architectural exterior wraps and weather-tight commercial elevations.</p><img decoding="async" src="assets/sheathed-house.webp" alt="Representative exterior envelope sheathing and cladding work" loading="lazy"></div></div></li>
+    <li class="svc__row" data-img="2" data-chip="t-sign"><button class="svc__btn" aria-expanded="false"><span class="svc__code mono">SV-03</span><span class="svc__title">3D Signages</span><span class="svc__desc">Illuminated 3D channel letters, fascia signboards, vertical tower signs and brand identity installations built for day and night visibility.</span><span class="svc__arrow"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 8h12M9 3l5 5-5 5"/></svg></span></button>
+      <div class="svc__media"><div><p>Illuminated 3D channel letters, fascia signboards, vertical tower signs and brand identity installations built for day and night visibility.</p><img decoding="async" src="assets/frame-row-b.webp" alt="Representative commercial elevation ready for signage" loading="lazy"></div></div></li>
+    <li class="svc__row" data-img="3" data-chip="t-metal"><button class="svc__btn" aria-expanded="false"><span class="svc__code mono">SV-04</span><span class="svc__title">Metal Works</span><span class="svc__desc">Structural steel fabrication, signage sub-frames, canopies, gates, balustrades and heavy-duty site metalwork.</span><span class="svc__arrow"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 8h12M9 3l5 5-5 5"/></svg></span></button>
+      <div class="svc__media"><div><p>Structural steel fabrication, signage sub-frames, canopies, gates, balustrades and heavy-duty site metalwork.</p><img decoding="async" src="assets/frame-open.webp" alt="Representative structural framing and metalwork" loading="lazy"></div></div></li>
+    <li class="svc__row" data-img="4" data-chip="t-build"><button class="svc__btn" aria-expanded="false"><span class="svc__code mono">SV-05</span><span class="svc__title">Renovations &amp; Remodelling</span><span class="svc__desc">Storefront facelifts, structural alterations, interior fit-outs, roofing, painting and complete property upgrades.</span><span class="svc__arrow"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 8h12M9 3l5 5-5 5"/></svg></span></button>
+      <div class="svc__media"><div><p>Storefront facelifts, structural alterations, interior fit-outs, roofing, painting and complete property upgrades.</p><img decoding="async" src="assets/demolition.webp" alt="Representative commercial building renovation and strip-out" loading="lazy"></div></div></li>
+    <li class="svc__row" data-img="5" data-chip="t-build"><button class="svc__btn" aria-expanded="false"><span class="svc__code mono">SV-06</span><span class="svc__title">Design &amp; Project Management</span><span class="svc__desc">Architectural design, site preparation, electrical &amp; plumbing coordination, and turnkey delivery across Lagos, Ibadan and beyond.</span><span class="svc__arrow"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 8h12M9 3l5 5-5 5"/></svg></span></button>
+      <div class="svc__media"><div><p>Architectural design, site preparation, electrical &amp; plumbing coordination, and turnkey delivery across Lagos, Ibadan and beyond.</p><img decoding="async" src="assets/interior-crew.webp" alt="Representative on-site coordination and fit-out crew" loading="lazy"></div></div></li>
   </ul>
-  <div class="pixels" data-to="#111110"></div>
+  <div class="pixels" data-to="#0c214d"></div>
 </section>
 <div class="svc-preview" id="svc-preview" aria-hidden="true">
-  <img src="assets/sheathed-house.webp" alt=""><img src="assets/frame-row-b.webp" alt=""><img src="assets/crew-slab.webp" alt=""><img src="assets/demolition.webp" alt=""><img src="assets/interior-crew.webp" alt=""><img src="assets/frame-open.webp" alt="">
+  <img src="assets/crew-slab.webp" alt=""><img src="assets/sheathed-house.webp" alt=""><img src="assets/frame-row-b.webp" alt=""><img src="assets/frame-open.webp" alt=""><img src="assets/demolition.webp" alt=""><img src="assets/interior-crew.webp" alt="">
 </div>
 
 <!-- ───────── Build sequence (3D) ───────── -->
 <section class="build" id="process" aria-label="Build sequence">
   <div class="build__sticky">
-    <canvas id="build-canvas" data-cursor="Drag" aria-label="Interactive 3D model of a five-storey building assembling as you scroll"></canvas>
+    <canvas id="build-canvas" data-cursor="Drag" aria-label="Interactive 3D model of a five-storey commercial building assembling from groundwork to cladding and illumination as you scroll"></canvas>
     <div id="build-labels" aria-hidden="true"></div>
     <div class="build__hud wrap">
       <div>
-        <header class="sheet mono"><span><b>S-301</b> · Build sequence</span><span>Scroll to build · drag to orbit</span><span>Not to scale</span></header>
-        <h2 class="build__title">Watch a building <em>go up.</em></h2>
+        <header class="sheet mono"><span><b>S-301</b> · Build sequence</span><span>Scroll to build · drag to orbit</span><span>Procare Builders</span></header>
+        <h2 class="build__title">Watch a building <em>take shape.</em></h2>
       </div>
       <ol class="stages" id="stages">
-        <li class="stage"><span class="mono">01</span><b>Groundwork</b><p>Hoarding, crane base, piles and pad footings. We set out the grid to ±3 mm.</p></li>
-        <li class="stage"><span class="mono">02</span><b>Frame &amp; floors</b><p>Columns, beams and precast planks, one level every nine working days.</p></li>
-        <li class="stage"><span class="mono">03</span><b>Envelope</b><p>Curtain wall and fins go on as soon as each floor is signed off, so trades can work in the dry.</p></li>
-        <li class="stage"><span class="mono">04</span><b>Roof &amp; plant</b><p>Parapets, plant enclosure and 84 PV panels. The crane comes down.</p></li>
-        <li class="stage"><span class="mono">05</span><b>Handover</b><p>Lights on, landscaping in, a weekly photo diary in your inbox.</p></li>
+        <li class="stage"><span class="mono">01</span><b>Groundwork &amp; setting out</b><p>Site hoarding, foundations, pad footings and structural grid laid out to exact tolerances.</p></li>
+        <li class="stage"><span class="mono">02</span><b>Frame &amp; structural works</b><p>Reinforced concrete columns, beams, floor slabs and core erected level by level.</p></li>
+        <li class="stage"><span class="mono">03</span><b>Cladding &amp; envelope</b><p>Curtain walling, architectural cladding panels and exterior fins lock in the facade.</p></li>
+        <li class="stage"><span class="mono">04</span><b>Roof, metalwork &amp; plant</b><p>Parapets, structural steel louvres, rooftop services and solar array completed.</p></li>
+        <li class="stage"><span class="mono">05</span><b>Illumination &amp; handover</b><p>Hoarding struck, exterior lighting powered on, and finished building handed over.</p></li>
       </ol>
       <div class="readout mono">
         <div>Elements placed<strong><span id="ro-el">000</span><small id="ro-total">/ 000</small></strong></div>
-        <div>Programme<strong><span id="ro-wk">00</span><small>/ 46 wks</small></strong></div>
-        <div>Current level<strong id="ro-lvl">—</strong></div>
+        <div>Sequence<strong><span id="ro-wk">00</span><small>/ 100%</small></strong></div>
+        <div>Active stage<strong id="ro-lvl">—</strong></div>
         <div class="progress"><div class="progress__ticks" id="ticks"></div><div class="progress__bar"><i id="build-bar"></i></div></div>
       </div>
     </div>
@@ -633,127 +650,123 @@ body::after{content:"";position:fixed;inset:-50%;z-index:90;pointer-events:none;
 
 <!-- ───────── Projects ───────── -->
 <section class="projects light wrap" id="projects">
-  <header class="sheet mono"><span><b>A-401</b> · Selected projects</span><span>2022 – 2026</span><span>6 of 48</span></header>
+  <header class="sheet mono"><span><b>A-401</b> · Selected projects</span><span>2017 – 2026</span><span>Lagos · Ibadan · Nationwide</span></header>
   <div class="projects__head">
-    <h2>Built, signed off, <em>lived in.</em></h2>
-    <p>Six recent jobs, from a single family home to a four-storey frame.</p>
+    <h2>Built to stand, <em>clad to stand out.</em></h2>
+    <p>Six curated works spanning commercial storefronts, multi-storey cladding, structural metal fabrication and turnkey construction.</p>
   </div>
   <div class="stack" id="stack">
       <article class="pcard" style="--i:0">
         <a class="pcard__in" href="in-development.html" data-cursor="View">
-          <div class="pcard__img"><img decoding="async" src="assets/frame-row-b.webp" alt="Two-storey timber-framed homes on a new street" loading="lazy"></div>
+          <div class="pcard__img"><img decoding="async" src="assets/finished-hip.webp" alt="Commercial cafe storefront with matte cladding and illuminated signage" loading="lazy"></div>
           <div class="pcard__body">
-            <div class="pcard__top mono"><span>01 / 06</span><span>Surrey · 2026</span></div>
-            <h3>Harrow Lane Residences</h3>
-            <p>Eight timber-frame homes on a former nursery site, framed and sheathed in eleven weeks.</p>
-            <dl class="pcard__specs"><div><dt class="mono">Scope</dt><dd>8 homes</dd></div><div><dt class="mono">Structure</dt><dd>Timber frame</dd></div><div><dt class="mono">Area</dt><dd>960 m²</dd></div><div><dt class="mono">Status</dt><dd>On site</dd></div></dl>
+            <h3>Cookbox Cafe Storefront</h3>
+            <p>Full dark-matte exterior cladding paired with custom illuminated 3D signage and yellow architectural fascia accent — engineered for instant street-level visibility.</p>
+            <dl class="pcard__specs"><div><dt class="mono">Scope</dt><dd>Storefront &amp; Signage</dd></div><div><dt class="mono">System</dt><dd>ACP Cladding &amp; LED 3D</dd></div><div><dt class="mono">Sector</dt><dd>Hospitality / Retail</dd></div><div><dt class="mono">Status</dt><dd>Handed over</dd></div></dl>
             <span class="pcard__link">View project <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 13 13 3M5 3h8v8"/></svg></span>
           </div>
         </a>
       </article>
       <article class="pcard" style="--i:1">
         <a class="pcard__in" href="in-development.html" data-cursor="View">
-          <div class="pcard__img"><img decoding="async" src="assets/crew-slab.webp" alt="Concrete deck with props and a crew in hi-vis" loading="lazy"></div>
+          <div class="pcard__img"><img decoding="async" src="assets/crew-slab.webp" alt="Multi-storey commercial facade elevation and vertical signage" loading="lazy"></div>
           <div class="pcard__body">
-            <div class="pcard__top mono"><span>02 / 06</span><span>Greenwich · 2026</span></div>
-            <h3>Quayside D3</h3>
-            <p>A four-storey concrete frame over ground-floor shops, poured one floor every two weeks.</p>
-            <dl class="pcard__specs"><div><dt class="mono">Scope</dt><dd>4 storeys</dd></div><div><dt class="mono">Structure</dt><dd>RC frame</dd></div><div><dt class="mono">Area</dt><dd>2,400 m²</dd></div><div><dt class="mono">Status</dt><dd>On site</dd></div></dl>
+            <h3>ADVENT Flagship Facade</h3>
+            <p>Full-height geometric cladding tower with crisp vertical illuminated 3D lettering and upper-level fascia branding across a commercial flagship front.</p>
+            <dl class="pcard__specs"><div><dt class="mono">Scope</dt><dd>Multi-Storey Facade</dd></div><div><dt class="mono">System</dt><dd>Geometric ACP &amp; LED 3D</dd></div><div><dt class="mono">Sector</dt><dd>Commercial Retail</dd></div><div><dt class="mono">Status</dt><dd>Handed over</dd></div></dl>
             <span class="pcard__link">View project <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 13 13 3M5 3h8v8"/></svg></span>
           </div>
         </a>
       </article>
       <article class="pcard" style="--i:2">
         <a class="pcard__in" href="in-development.html" data-cursor="View">
-          <div class="pcard__img"><img decoding="async" src="assets/finished-hip.webp" alt="Finished brick house with hipped slate roof and porch" loading="lazy"></div>
+          <div class="pcard__img"><img decoding="async" src="assets/frame-row-b.webp" alt="Commercial building block under construction" loading="lazy"></div>
           <div class="pcard__body">
-            <div class="pcard__top mono"><span>03 / 06</span><span>Kent · 2025</span></div>
-            <h3>Ashcombe House</h3>
-            <p>A brick family home on a sloping orchard plot, with a hipped slate roof and a timber porch.</p>
-            <dl class="pcard__specs"><div><dt class="mono">Scope</dt><dd>Private home</dd></div><div><dt class="mono">Structure</dt><dd>Masonry</dd></div><div><dt class="mono">Area</dt><dd>412 m²</dd></div><div><dt class="mono">Status</dt><dd>Handed over</dd></div></dl>
+            <h3>Commercial Plaza Build</h3>
+            <p>Multi-unit commercial block taken from site clearance and reinforced concrete framing through exterior composite cladding and illuminated fascia signboards.</p>
+            <dl class="pcard__specs"><div><dt class="mono">Scope</dt><dd>Design &amp; Build</dd></div><div><dt class="mono">System</dt><dd>RC Frame &amp; ACP</dd></div><div><dt class="mono">Division</dt><dd>Procare Builders</dd></div><div><dt class="mono">Coverage</dt><dd>Lagos</dd></div></dl>
             <span class="pcard__link">View project <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 13 13 3M5 3h8v8"/></svg></span>
           </div>
         </a>
       </article>
       <article class="pcard" style="--i:3">
         <a class="pcard__in" href="in-development.html" data-cursor="View">
-          <div class="pcard__img"><img decoding="async" src="assets/demolition.webp" alt="Building opened in section during strip-out" loading="lazy"></div>
+          <div class="pcard__img"><img decoding="async" src="assets/demolition.webp" alt="Existing commercial building undergoing structural strip-out and facade upgrade" loading="lazy"></div>
           <div class="pcard__body">
-            <div class="pcard__top mono"><span>04 / 06</span><span>Reading · 2024</span></div>
-            <h3>The Weir Building</h3>
-            <p>A 1960s mill office stripped back to its frame and brought from EPC G to B.</p>
-            <dl class="pcard__specs"><div><dt class="mono">Scope</dt><dd>Retrofit</dd></div><div><dt class="mono">Structure</dt><dd>RC frame</dd></div><div><dt class="mono">Area</dt><dd>1,180 m²</dd></div><div><dt class="mono">Status</dt><dd>Handed over</dd></div></dl>
+            <h3>Retail Facade Transformation</h3>
+            <p>Existing commercial elevation stripped back, re-framed with structural steel sub-grids, and re-clad in flush composite panels with integrated LED branding.</p>
+            <dl class="pcard__specs"><div><dt class="mono">Scope</dt><dd>Retrofit &amp; Cladding</dd></div><div><dt class="mono">System</dt><dd>Steel Sub-frame &amp; ACP</dd></div><div><dt class="mono">Division</dt><dd>Renovations</dd></div><div><dt class="mono">Coverage</dt><dd>Ibadan</dd></div></dl>
             <span class="pcard__link">View project <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 13 13 3M5 3h8v8"/></svg></span>
           </div>
         </a>
       </article>
       <article class="pcard" style="--i:4">
         <a class="pcard__in" href="in-development.html" data-cursor="View">
-          <div class="pcard__img"><img decoding="async" src="assets/scaffold-row.webp" alt="Scaffolded timber-frame terrace awaiting roof tiles" loading="lazy"></div>
+          <div class="pcard__img"><img decoding="async" src="assets/scaffold-row.webp" alt="Structural steel scaffolding, canopy framework and architectural metal fabrication" loading="lazy"></div>
           <div class="pcard__body">
-            <div class="pcard__top mono"><span>05 / 06</span><span>Hampshire · 2023</span></div>
-            <h3>Millbrook Rise</h3>
-            <p>Fourteen homes built in two phases while the first residents moved in next door.</p>
-            <dl class="pcard__specs"><div><dt class="mono">Scope</dt><dd>14 homes</dd></div><div><dt class="mono">Structure</dt><dd>Timber frame</dd></div><div><dt class="mono">Area</dt><dd>1,520 m²</dd></div><div><dt class="mono">Status</dt><dd>Handed over</dd></div></dl>
+            <h3>Structural Steel &amp; Canopy Works</h3>
+            <p>Precision-welded structural frames for heavy cladding elevations, cantilevered entrance canopies, perimeter gates, balustrades and custom commercial steelwork.</p>
+            <dl class="pcard__specs"><div><dt class="mono">Scope</dt><dd>Metal Fabrication</dd></div><div><dt class="mono">System</dt><dd>Structural Steel</dd></div><div><dt class="mono">Division</dt><dd>Metal Works</dd></div><div><dt class="mono">Coverage</dt><dd>Lagos &amp; Ibadan</dd></div></dl>
             <span class="pcard__link">View project <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 13 13 3M5 3h8v8"/></svg></span>
           </div>
         </a>
       </article>
       <article class="pcard" style="--i:5">
         <a class="pcard__in" href="in-development.html" data-cursor="View">
-          <div class="pcard__img"><img decoding="async" src="assets/finished-garage.webp" alt="Finished two-storey family home with double garage" loading="lazy"></div>
+          <div class="pcard__img"><img decoding="async" src="assets/finished-garage.webp" alt="Completed turnkey residential building with architectural exterior finishes" loading="lazy"></div>
           <div class="pcard__body">
-            <div class="pcard__top mono"><span>06 / 06</span><span>Sussex · 2022</span></div>
-            <h3>Oakfield Close</h3>
-            <p>Six family homes around a shared green, each with an air-source heat pump.</p>
-            <dl class="pcard__specs"><div><dt class="mono">Scope</dt><dd>6 homes</dd></div><div><dt class="mono">Structure</dt><dd>Masonry</dd></div><div><dt class="mono">Area</dt><dd>720 m²</dd></div><div><dt class="mono">Status</dt><dd>Handed over</dd></div></dl>
+            <h3>Turnkey Residential Build</h3>
+            <p>Ground-up residential construction covering architectural planning, structural framing, electrical and plumbing works, roofing, painting and custom steel gates.</p>
+            <dl class="pcard__specs"><div><dt class="mono">Scope</dt><dd>Turnkey Build</dd></div><div><dt class="mono">System</dt><dd>Masonry &amp; Steel</dd></div><div><dt class="mono">Division</dt><dd>Procare Builders</dd></div><div><dt class="mono">Coverage</dt><dd>Nationwide</dd></div></dl>
             <span class="pcard__link">View project <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 13 13 3M5 3h8v8"/></svg></span>
           </div>
         </a>
       </article>
   </div>
-  <div class="projects__more"><a class="btn btn--ink" href="in-development.html" data-cursor-link><span class="btn__txt">Browse all 48 projects</span><span class="btn__ico"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 13 13 3M5 3h8v8"/></svg></span></a></div>
+  <div class="projects__more">
+    <a class="btn btn--ink" href="in-development.html" data-cursor-link><span class="btn__txt">Browse all projects</span><span class="btn__ico"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 13 13 3M5 3h8v8"/></svg></span></a>
+  </div>
 </section>
 
 <!-- ───────── Field ───────── -->
-<section class="field" id="field" aria-label="Quality">
+<section class="field" id="field" aria-label="Execution Standard">
   <div class="field__sticky">
-    <div class="field__img" id="field-img"><img decoding="async" src="assets/interior-crew.webp" alt="Carpenters fixing studwork inside an open timber frame" loading="lazy"></div>
+    <div class="field__img" id="field-img"><img decoding="async" src="assets/interior-crew.webp" alt="Representative site execution and quality inspection crew" loading="lazy"></div>
     <div class="field__text wrap">
-      <h2>Every joist is checked by someone who <em>signs for it.</em></h2>
-      <p>Each stage is inspected by our own quality lead before the next trade starts, then recorded in the photo diary you get every Friday.</p>
+      <h2>Your facade is the first thing every client <em>judges.</em></h2>
+      <p>We engineer the steel sub-frame, align every cladding seam, and wire every illuminated letter so your building commands attention years after handover.</p>
     </div>
   </div>
 </section>
 
-<!-- ───────── Testimonials ───────── -->
+<!-- ───────── Standards / Why Procare ───────── -->
 <section class="voices light wrap" id="voices">
-  <header class="sheet mono"><span><b>A-501</b> · Clients</span><span>Post-occupancy, 12 months on</span><span>3 of 31 reviews</span></header>
+  <header class="sheet mono"><span><b>A-501</b> · Why Procare</span><span>Verified credentials &amp; execution model</span><span>01 – 03</span></header>
   <div class="voices__grid">
     <div class="voices__side">
       <div class="voices__img" id="voice-imgs">
         <img decoding="async" class="is-active" src="assets/frame-row-a.webp" alt="" loading="lazy">
         <img decoding="async" src="assets/demolition.webp" alt="" loading="lazy">
-        <img decoding="async" src="assets/finished-hip.webp" alt="" loading="lazy">
+        <img decoding="async" src="assets/finished-garage.webp" alt="" loading="lazy">
       </div>
       <div class="voices__nav">
-        <button id="v-prev" aria-label="Previous review"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 8H2M7 3 2 8l5 5"/></svg></button>
-        <button id="v-next" aria-label="Next review"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 8h12M9 3l5 5-5 5"/></svg></button>
+        <button id="v-prev" aria-label="Previous pillar"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 8H2M7 3 2 8l5 5"/></svg></button>
+        <button id="v-next" aria-label="Next pillar"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 8h12M9 3l5 5-5 5"/></svg></button>
         <span class="mono" id="v-count">01 / 03</span>
       </div>
     </div>
     <div aria-live="polite" id="quotes">
       <figure class="quote is-active">
-        <blockquote>In week two they told us the steel would be three weeks late. Then they resequenced the programme and we still moved in on the date we'd planned.</blockquote>
-        <figcaption><div><b>Priya Raman</b><span>Development Director, Calder Living</span></div><span class="mono">Harrow Lane Residences</span></figcaption>
+        <blockquote>One contractor for construction, metal fabrication, facade cladding and 3D signage — eliminating costly handover gaps between separate trades.</blockquote>
+        <figcaption><div><b>Integrated Delivery</b><span>Procare Builders · Cladding · Signages · Metal Works</span></div><span class="mono">Single point of contact</span></figcaption>
       </figure>
       <figure class="quote">
-        <blockquote>The tidiest site I've walked in thirty years of commissioning buildings. That tells you how they run everything else.</blockquote>
-        <figcaption><div><b>Martin Okafor</b><span>Head of Estates, The Weir Trust</span></div><span class="mono">The Weir Building</span></figcaption>
+        <blockquote>CAC registered (RC: 1990397) and operating continuously since 2017 across commercial facades, illuminated signage installations and ground-up construction.</blockquote>
+        <figcaption><div><b>Proven Track Record</b><span>CAC Registered · Annex Procare Multimedia</span></div><span class="mono">Since 2017</span></figcaption>
       </figure>
       <figure class="quote">
-        <blockquote>A photo diary arrived every Friday. By handover we had twenty-two of them and not a single surprise.</blockquote>
-        <figcaption><div><b>Hannah &amp; Tom Ellery</b><span>Homeowners</span></div><span class="mono">Ashcombe House</span></figcaption>
+        <blockquote>Based in Lagos and Ibadan with full mobilisation teams available to travel for commercial, retail and institutional installations across Nigeria.</blockquote>
+        <figcaption><div><b>Nationwide Mobilisation</b><span>Lagos &amp; Ibadan operational hubs</span></div><span class="mono">Available to travel</span></figcaption>
       </figure>
     </div>
   </div>
@@ -762,35 +775,40 @@ body::after{content:"";position:fixed;inset:-50%;z-index:90;pointer-events:none;
 
 <!-- ───────── Contact ───────── -->
 <section class="contact dark wrap" id="contact">
-  <header class="sheet mono"><span><b>A-601</b> · Contact</span><span>Replies within two working days</span><span>Issued for tender</span></header>
+  <header class="sheet mono"><span><b>A-601</b> · Contact</span><span>Direct WhatsApp &amp; project briefs</span><span>Lagos · Ibadan · Nationwide</span></header>
   <div class="contact__grid">
     <div>
-      <h2>Got a site? <em>Let's talk</em> about what goes on it.</h2>
+      <h2>Ready to build or <em>rebrand</em> your space?</h2>
       <div class="contact__details">
-        <div><span class="mono">Studio</span><b>Unit 4, Creekside Yard<br>London SE8 3DZ</b></div>
-        <div><span class="mono">New business</span><b>studio@axenform.co</b></div>
+        <div><span class="mono">Operational Hubs</span><b>Lagos &amp; Ibadan, Nigeria<br>Available to travel nationwide</b></div>
+        <div><span class="mono">WhatsApp &amp; Direct Line</span><a href="https://api.whatsapp.com/send?phone=2349028399853" target="_blank" rel="noopener">+234 902 839 9853 ↗</a></div>
+        <div><span class="mono">Registration</span><b>CAC Registered<br>RC: 1990397 · Since 2017</b></div>
+        <div><span class="mono">Divisions</span><b>Procare Builders · Cladding<br>Signages · Procare Multimedia</b></div>
+      </div>
+      <div class="contact__wa">
+        <a class="btn btn--amber" href="https://api.whatsapp.com/send?phone=2349028399853" target="_blank" rel="noopener" data-cursor-link><span class="btn__txt">Message on WhatsApp</span><span class="btn__ico"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 13 13 3M5 3h8v8"/></svg></span></a>
       </div>
     </div>
     <form class="form" id="form" novalidate>
       <fieldset class="chips">
-        <legend class="mono legend">Project type</legend>
-        <label class="chip"><input type="radio" name="type" id="t-home" value="New home" checked><span>New home</span></label>
-        <label class="chip"><input type="radio" name="type" id="t-dev" value="Housing scheme"><span>Housing scheme</span></label>
-        <label class="chip"><input type="radio" name="type" id="t-com" value="Commercial"><span>Commercial</span></label>
-        <label class="chip"><input type="radio" name="type" id="t-ret" value="Retrofit"><span>Retrofit</span></label>
+        <legend class="mono legend">Service needed</legend>
+        <label class="chip"><input type="radio" name="type" id="t-clad" value="Facade Cladding" checked><span>Facade Cladding</span></label>
+        <label class="chip"><input type="radio" name="type" id="t-sign" value="3D Signage"><span>3D Signage</span></label>
+        <label class="chip"><input type="radio" name="type" id="t-build" value="Building Construction"><span>Building Construction</span></label>
+        <label class="chip"><input type="radio" name="type" id="t-metal" value="Metal Works"><span>Metal Works</span></label>
       </fieldset>
       <div class="form__row">
-        <div class="field-i"><label class="mono" for="f-name">Your name</label><input id="f-name" name="name" autocomplete="name" placeholder="Alex Morgan" required></div>
-        <div class="field-i"><label class="mono" for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" placeholder="alex@company.com" required></div>
+        <div class="field-i"><label class="mono" for="f-name">Your name</label><input id="f-name" name="name" autocomplete="name" placeholder="Your full name" required></div>
+        <div class="field-i"><label class="mono" for="f-phone">Phone / WhatsApp</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="+234 800 000 0000" required></div>
       </div>
       <div class="form__row">
-        <div class="field-i"><label class="mono" for="f-budget">Construction budget</label>
-          <select id="f-budget" name="budget"><option>Under £250k</option><option selected>£250k – £1M</option><option>£1M – £3M</option><option>£3M +</option></select></div>
-        <div class="field-i"><label class="mono" for="f-start">Hoping to start</label>
-          <select id="f-start" name="start"><option>Within 6 months</option><option selected>6 – 12 months</option><option>Next year or later</option></select></div>
+        <div class="field-i"><label class="mono" for="f-loc">Project location</label>
+          <select id="f-loc" name="location"><option selected>Lagos</option><option>Ibadan</option><option>Abuja / FCT</option><option>Other State (Travel)</option></select></div>
+        <div class="field-i"><label class="mono" for="f-start">Target timeline</label>
+          <select id="f-start" name="start"><option selected>Immediate (Within 30 days)</option><option>1 – 3 months</option><option>3+ months</option></select></div>
       </div>
-      <div class="field-i"><label class="mono" for="f-msg">About the site</label><textarea id="f-msg" name="msg" placeholder="Where it is, what's there now, and what you'd like to build."></textarea></div>
-      <button class="btn" type="submit" data-cursor-link><span class="btn__txt">Send enquiry</span><span class="btn__ico"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 13 13 3M5 3h8v8"/></svg></span></button>
+      <div class="field-i"><label class="mono" for="f-msg">Project brief</label><textarea id="f-msg" name="msg" placeholder="Tell us about the building, storefront dimensions, cladding/signage requirements or construction scope."></textarea></div>
+      <button class="btn" type="submit" data-cursor-link><span class="btn__txt">Prepare WhatsApp brief</span><span class="btn__ico"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 13 13 3M5 3h8v8"/></svg></span></button>
       <p class="form__note" id="form-note" role="status"></p>
     </form>
   </div>
@@ -798,13 +816,13 @@ body::after{content:"";position:fixed;inset:-50%;z-index:90;pointer-events:none;
 
 <footer class="footer dark wrap">
   <div class="footer__cols">
-    <div><p class="footer__values">People. Places.<br>Perspective. <span>Always.</span></p></div>
-    <div><h3 class="mono">Sitemap</h3><ul><li><a href="#studio">Studio</a></li><li><a href="#services">Services</a></li><li><a href="#process">Process</a></li><li><a href="#projects">Projects</a></li></ul></div>
-    <div><h3 class="mono">More</h3><ul><li><a href="in-development.html">Journal</a></li><li><a href="in-development.html">Careers</a></li><li><a href="in-development.html">Health &amp; safety</a></li><li><a href="in-development.html">Supply chain</a></li></ul></div>
-    <div><h3 class="mono">Follow</h3><ul><li><a href="in-development.html">Instagram</a></li><li><a href="in-development.html">LinkedIn</a></li><li><a href="in-development.html">Photo diaries</a></li></ul></div>
+    <div><p class="footer__values">Building Construction.<br>Cladding. Signages.<br><span>Metal Works.</span></p></div>
+    <div><h3 class="mono">Navigate</h3><ul><li><a href="#about">Company</a></li><li><a href="#services">Services</a></li><li><a href="#process">Build Sequence</a></li><li><a href="#projects">Projects</a></li></ul></div>
+    <div><h3 class="mono">Divisions</h3><ul><li><a href="#services">Procare Builders</a></li><li><a href="#services">Cladding &amp; Facades</a></li><li><a href="#services">3D Illuminated Signs</a></li><li><a href="in-development.html">Procare Multimedia</a></li></ul></div>
+    <div><h3 class="mono">Connect</h3><ul><li><a href="https://api.whatsapp.com/send?phone=2349028399853" target="_blank" rel="noopener">WhatsApp</a></li><li><a href="https://www.instagram.com/procare_signages/" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.threads.net/@procare_signages" target="_blank" rel="noopener">Threads</a></li><li><a href="in-development.html">Full Catalogue</a></li></ul></div>
   </div>
-  <p class="footer__word" aria-hidden="true">AXEN FORM</p>
-  <div class="footer__base mono"><span>© 2026 Axen Form Ltd</span><span>CHAS · ISO 9001 · ISO 45001</span><a href="#top">Back to top ↑</a></div>
+  <p class="footer__word" aria-hidden="true">PROCARE</p>
+  <div class="footer__base mono"><span>© 2026 Procare Cladding &amp; Signage Place</span><span>RC: 1990397 · Since 2017 · Lagos | Ibadan</span><a href="#top">Back to top ↑</a></div>
 </footer>
 </main>
 
@@ -820,7 +838,7 @@ body::after{content:"";position:fixed;inset:-50%;z-index:90;pointer-events:none;
   const $$ = (s, r = document) => [...r.querySelectorAll(s)];
   const clamp = (v, a = 0, b = 1) => Math.min(b, Math.max(a, v));
   const lerp = (a, b, t) => a + (b - a) * t;
-  window.AXEN = { progress: {} };
+  window.PROCARE = { progress: {} };
 
   /* split hero + footer words into chars */
   $$('.split-chars, .footer__word').forEach(el => {
@@ -863,7 +881,7 @@ body::after{content:"";position:fixed;inset:-50%;z-index:90;pointer-events:none;
     const avail = (box || el.parentElement).clientWidth * ratio;
     if (wNow > 0) el.style.fontSize = (fs * avail / wNow) + 'px';
   }
-  const fitAll = () => { fitWord($('#hero-mega h2'), innerWidth <= 820 ? 0.97 : 0.985); fitWord($('.footer__word'), 0.995, $('.footer__word')); };
+  const fitAll = () => { fitWord($('#hero-mega h2'), innerWidth <= 820 ? 0.96 : 0.94); fitWord($('.footer__word'), 0.995, $('.footer__word')); };
   fitAll(); addEventListener('resize', fitAll);
   document.fonts && document.fonts.ready.then(() => { fitAll(); window.ScrollTrigger && ScrollTrigger.refresh(); });
 
@@ -901,14 +919,14 @@ body::after{content:"";position:fixed;inset:-50%;z-index:90;pointer-events:none;
     gsap.from('.hero__mega .ch span', { yPercent: 105, duration: 1.3, ease: 'expo.out', stagger: 0.05, delay: 0.15 });
     gsap.from('.hero__cut', { scale: 1.08, duration: 2, ease: 'expo.out' });
     gsap.from('.hero__bg', { scale: 1.15, duration: 2.2, ease: 'expo.out' });
-    gsap.from('.hero__bottom > *, .hero__top p', { y: 30, opacity: 0, duration: 1.1, ease: 'expo.out', stagger: 0.08, delay: 0.4 });
+    gsap.from('.hero__bottom > *', { y: 30, opacity: 0, duration: 1.1, ease: 'expo.out', stagger: 0.08, delay: 0.4 });
   }
 
-  /* hero pins mapped from image pixels to the cover-fit box (honours object-position) */
+  /* hero pins mapped from image pixels to the cover-fit box */
   const hero = $('#hero'), pins = $$('.pin'), heroImg = $('.hero__bg img');
   function placePins() {
     const box = $('.hero__bg').getBoundingClientRect(), hb = hero.getBoundingClientRect();
-    const iw = 2400, ih = 1947, s = Math.max(box.width / iw, box.height / ih);
+    const iw = 1376, ih = 768, s = Math.max(box.width / iw, box.height / ih);
     const [px_, py_] = getComputedStyle(heroImg).objectPosition.split(' ').map(v => parseFloat(v) / 100);
     const ox = (box.width - iw * s) * px_, oy = (box.height - ih * s) * py_;
     pins.forEach(p => {
@@ -920,15 +938,15 @@ body::after{content:"";position:fixed;inset:-50%;z-index:90;pointer-events:none;
   placePins(); addEventListener('resize', placePins);
 
   /* sit the wordmark so the main roof peak rises through its lower half */
-  const mega = $('#hero-mega'), PEAK = { x: 1200, y: 636 };
+  const mega = $('#hero-mega'), PEAK = { x: 684, y: 206 };
   function placeMega() {
-    const L = $('.hero__bg'), bw = L.offsetWidth, bh = L.offsetHeight; // layout size, ignores intro/parallax transforms
-    const iw = 2400, ih = 1947, s = Math.max(bw / iw, bh / ih);
+    const L = $('.hero__bg'), bw = L.offsetWidth, bh = L.offsetHeight;
+    const iw = 1376, ih = 768, s = Math.max(bw / iw, bh / ih);
     const py_ = parseFloat(getComputedStyle(heroImg).objectPosition.split(' ')[1]) / 100;
     const peakY = L.offsetTop + (bh - ih * s) * py_ + PEAK.y * s;
     const ch = $('.ch', mega); if (!ch) return;
     const hgt = ch.getBoundingClientRect().height;
-    mega.style.top = Math.max(innerWidth <= 820 ? 132 : 130, peakY - hgt * (innerWidth <= 820 ? 0.5 : 0.55)) + 'px';
+    mega.style.top = Math.max(innerWidth <= 820 ? 110 : 88, peakY - hgt * (innerWidth <= 820 ? 0.48 : 0.52)) + 'px';
   }
   placeMega(); addEventListener('resize', placeMega); addEventListener('load', placeMega);
   document.fonts && document.fonts.ready.then(placeMega);
@@ -941,7 +959,6 @@ body::after{content:"";position:fixed;inset:-50%;z-index:90;pointer-events:none;
   if (hasGsap && !reduce) {
     gsap.registerPlugin(ScrollTrigger);
 
-    /* cursor + hero mouse depth, all through quickTo (one tween per axis, no per-frame layout reads) */
     if (fine) {
       const cX = gsap.quickTo(cur, 'x', { duration: 0.25, ease: 'power3' }), cY = gsap.quickTo(cur, 'y', { duration: 0.25, ease: 'power3' });
       const layers = [['.hero__bg img', 10, 6], ['#hero-mega h2', 26, 10], ['.hero__cut img', 46, 16]].map(([sel, ax, ay]) => {
@@ -959,20 +976,17 @@ body::after{content:"";position:fixed;inset:-50%;z-index:90;pointer-events:none;
       });
     }
 
-    /* hero scroll depth: three layers at three speeds */
     const heroST = { trigger: hero, start: 'top top', end: 'bottom top', scrub: true };
     gsap.to('.hero__bg', { y: () => innerHeight * 0.18, ease: 'none', scrollTrigger: heroST });
     gsap.to('#hero-mega', { y: () => innerHeight * 0.42, ease: 'none', scrollTrigger: { ...heroST } });
     gsap.to('.hero__cut', { y: () => innerHeight * 0.08, ease: 'none', scrollTrigger: { ...heroST } });
 
-    /* nav: hide on the way down, show on the way up, solid on mobile once past the hero */
     ScrollTrigger.create({ start: 0, end: 'max', onUpdate: self => {
       const y = self.scroll();
       nav.classList.toggle('is-hidden', self.direction === 1 && y > innerHeight * 0.6 && !menu.classList.contains('is-open'));
       nav.classList.toggle('is-solid', y > innerHeight * 0.5);
     } });
 
-    /* projects: each card shrinks and dims as the next one slides over it (desktop only) */
     const mm = gsap.matchMedia();
     mm.add('(min-width: 821px)', () => {
       const cards = $$('.pcard');
@@ -982,7 +996,6 @@ body::after{content:"";position:fixed;inset:-50%;z-index:90;pointer-events:none;
       });
     });
 
-    /* field: inset photo opens to full bleed, then the line fades in */
     gsap.timeline({ scrollTrigger: { trigger: '#field', start: 'top top', end: 'bottom bottom', scrub: true } })
       .fromTo('#field-img', { clipPath: 'inset(18% 26% round 10px)' }, { clipPath: 'inset(0% 0% round 0px)', ease: 'power2.out', duration: 0.6 }, 0)
       .fromTo('#field-img img', { scale: 1.25 }, { scale: 1, ease: 'power2.out', duration: 0.6 }, 0)
@@ -992,7 +1005,7 @@ body::after{content:"";position:fixed;inset:-50%;z-index:90;pointer-events:none;
     $('#field').style.setProperty('--o', 1);
   }
 
-  /* services: cursor-follow preview (desktop) / accordion (touch) */
+  /* services: cursor-follow preview + direct quote selection (desktop) / accordion (touch) */
   $$('.svc__row').forEach(row => {
     const btn = $('.svc__btn', row);
     row.addEventListener('pointerenter', () => {
@@ -1002,24 +1015,35 @@ body::after{content:"";position:fixed;inset:-50%;z-index:90;pointer-events:none;
     });
     row.addEventListener('pointerleave', () => prev.classList.remove('is-on'));
     btn.addEventListener('click', () => {
-      if (!narrow()) { location.href = 'in-development.html'; return; }
+      if (!narrow()) {
+        const chip = row.dataset.chip && $('#' + row.dataset.chip);
+        if (chip) chip.checked = true;
+        scrollToEl($('#contact'));
+        return;
+      }
       const open = row.classList.toggle('is-open'); btn.setAttribute('aria-expanded', String(open));
     });
   });
 
-  /* testimonials */
+  /* pillars carousel */
   const quotes = $$('.quote'), vimgs = $$('#voice-imgs img'), vc = $('#v-count'); let qi = 0;
   const showQ = (n) => { qi = (n + quotes.length) % quotes.length; quotes.forEach((q, i) => q.classList.toggle('is-active', i === qi)); vimgs.forEach((q, i) => q.classList.toggle('is-active', i === qi)); vc.textContent = `0${qi + 1} / 0${quotes.length}`; };
   $('#v-prev').addEventListener('click', () => showQ(qi - 1)); $('#v-next').addEventListener('click', () => showQ(qi + 1));
 
-  /* enquiry form */
+  /* enquiry form wired directly to Procare WhatsApp */
   $('#form').addEventListener('submit', e => {
     e.preventDefault();
-    const f = e.target, note = $('#form-note'), name = f.name.value.trim(), email = f.email.value.trim();
-    if (!name) { note.className = 'form__note'; note.textContent = 'Add your name so we know who to reply to.'; f.name.focus(); return; }
-    if (!/^\S+@\S+\.\S+$/.test(email)) { note.className = 'form__note'; note.textContent = 'Check the email address. It needs an @ and a domain, like alex@company.com.'; f.email.focus(); return; }
+    const f = e.target, note = $('#form-note');
+    const name = f.name.value.trim(), phone = f.phone.value.trim();
+    const type = (f.querySelector('input[name="type"]:checked') || {}).value || 'Project Enquiry';
+    const loc = f.location.value, start = f.start.value, msg = f.msg.value.trim();
+    if (!name) { note.className = 'form__note'; note.textContent = 'Add your name so our team knows who to address.'; f.name.focus(); return; }
+    if (!phone || phone.replace(/\D/g, '').length < 7) { note.className = 'form__note'; note.textContent = 'Add a valid phone or WhatsApp number so we can reach you.'; f.phone.focus(); return; }
+    const text = `Hello Procare Cladding & Signage Place, my name is ${name} (${phone}).\nService: ${type}\nLocation: ${loc}\nTimeline: ${start}${msg ? `\nBrief: ${msg}` : ''}`;
+    const waUrl = `https://api.whatsapp.com/send?phone=2349028399853&text=${encodeURIComponent(text)}`;
     note.className = 'form__note is-ok';
-    note.textContent = `Thanks, ${name.split(' ')[0]}. Our estimating team will reply within two working days.`;
+    note.innerHTML = `Brief ready, ${name.split(' ')[0]}. <a href="${waUrl}" target="_blank" rel="noopener">Open in WhatsApp to send directly to +234 902 839 9853 ↗</a>`;
+    window.open(waUrl, '_blank', 'noopener');
   });
 
   /* pixel step dividers */
@@ -1083,7 +1107,7 @@ function canvasTex(size, draw, repeat = 1) {
 function speckle(g, n, size, rMax, light, dark, alpha) {
   for (let i = 0; i < n; i++) {
     const l = light + Math.random() * (dark - light);
-    g.fillStyle = `rgba(${l},${l * 0.98},${l * 0.94},${alpha})`;
+    g.fillStyle = `rgba(${l},${l * 0.98},${l * 0.96},${alpha})`;
     g.beginPath(); g.arc(Math.random() * size, Math.random() * size, Math.random() * rMax, 0, 7); g.fill();
   }
 }
@@ -1092,10 +1116,10 @@ const concreteDraw = (base, ties) => (g, s) => {
   speckle(g, 60, s, s * 0.18, 120, 230, 0.05);
   speckle(g, 9000, s, 1.1, 60, 220, 0.22);
   if (ties) {
-    g.strokeStyle = 'rgba(40,38,34,.16)'; g.lineWidth = 1.2;
+    g.strokeStyle = 'rgba(20,32,56,.16)'; g.lineWidth = 1.2;
     for (let x = 0; x <= s; x += s / 4) { g.beginPath(); g.moveTo(x, 0); g.lineTo(x, s); g.stroke(); }
     for (let y = 0; y <= s; y += s / 2) { g.beginPath(); g.moveTo(0, y); g.lineTo(s, y); g.stroke(); }
-    g.fillStyle = 'rgba(30,28,26,.35)';
+    g.fillStyle = 'rgba(14,24,48,.35)';
     for (let x = s / 8; x < s; x += s / 4) for (let y = s / 4; y < s; y += s / 2) { g.beginPath(); g.arc(x, y, 2.2, 0, 7); g.fill(); }
   }
 };
@@ -1112,14 +1136,14 @@ function initBuild() {
   const small = innerWidth <= 820;
   renderer.setPixelRatio(Math.min(devicePixelRatio, small ? 1.25 : 1.5));
   renderer.outputColorSpace = THREE.SRGBColorSpace;
-  renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = 1.0;
+  renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = 1.02;
   renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(30, 1, 0.5, 900);
 
-  // ── dusk sky dome (shared with the reflection environment)
-  const skyU = { top: { value: new THREE.Color(0x26303a) }, mid: { value: new THREE.Color(0x66707a) }, hor: { value: new THREE.Color(0xc9a07a) }, gnd: { value: new THREE.Color(0x3a342d) } };
+  // ── Procare deep royal blue dusk sky dome
+  const skyU = { top: { value: new THREE.Color(0x0c214d) }, mid: { value: new THREE.Color(0x3a5b8c) }, hor: { value: new THREE.Color(0xd8a378) }, gnd: { value: new THREE.Color(0x20293a) } };
   const skyMat = new THREE.ShaderMaterial({
     side: THREE.BackSide, depthWrite: false, fog: false, uniforms: skyU,
     vertexShader: 'varying vec3 vP; void main(){ vP = normalize(position); gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.); }',
@@ -1131,9 +1155,8 @@ function initBuild() {
       }`
   });
   const sky = new THREE.Mesh(new THREE.SphereGeometry(600, 40, 20), skyMat); scene.add(sky);
-  scene.fog = new THREE.Fog(0x8a7b6a, 110, 420);
+  scene.fog = new THREE.Fog(0x6e7b94, 110, 420);
 
-  // reflection environment: same sky plus a low warm sun
   const envScene = new THREE.Scene();
   envScene.add(new THREE.Mesh(new THREE.SphereGeometry(100, 32, 16), skyMat));
   const sunDisc = new THREE.Mesh(new THREE.SphereGeometry(9, 16, 8), new THREE.MeshBasicMaterial({ color: 0xffe2b8 }));
@@ -1141,7 +1164,7 @@ function initBuild() {
   const pmrem = new THREE.PMREMGenerator(renderer);
   scene.environment = pmrem.fromScene(envScene, 0.03).texture;
 
-  const hemi = new THREE.HemisphereLight(0xc7d0d8, 0x4a4035, 0.55); scene.add(hemi);
+  const hemi = new THREE.HemisphereLight(0xc2d5f0, 0x353b4a, 0.6); scene.add(hemi);
   const sun = new THREE.DirectionalLight(0xffd6a8, 3.1);
   sun.position.set(60, 34, 40); sun.castShadow = true;
   sun.shadow.mapSize.set(small ? 1024 : 2048, small ? 1024 : 2048);
@@ -1149,56 +1172,61 @@ function initBuild() {
   sun.shadow.bias = -0.0003; sun.shadow.normalBias = 0.04;
   scene.add(sun);
 
-  // ── materials
+  // ── materials (branded with Procare royal blue hoarding & high-vis orange crane/safety details)
   const tex = {
-    concrete: canvasTex(512, concreteDraw('#bdb8ae', true)),
-    slab: canvasTex(512, concreteDraw('#c6c1b7', false), 1),
-    hard: canvasTex(512, concreteDraw('#8d8880', false), 10),
+    concrete: canvasTex(512, concreteDraw('#c2c7d0', true)),
+    slab: canvasTex(512, concreteDraw('#cbd0d8', false), 1),
+    hard: canvasTex(512, concreteDraw('#8b919d', false), 10),
     soil: canvasTex(1024, (g, s) => {
-      g.fillStyle = '#4d4b47'; g.fillRect(0, 0, s, s);
-      speckle(g, 160, s, s * 0.1, 60, 120, 0.07);
-      speckle(g, 36000, s, 1.3, 40, 175, 0.32);
+      g.fillStyle = '#3f4552'; g.fillRect(0, 0, s, s);
+      speckle(g, 160, s, s * 0.1, 55, 115, 0.07);
+      speckle(g, 36000, s, 1.3, 40, 165, 0.28);
     }, 18),
-    timber: canvasTex(256, (g, s) => {
-      g.fillStyle = '#7d6247'; g.fillRect(0, 0, s, s);
-      for (let i = 0; i < 90; i++) { g.strokeStyle = `rgba(${60 + Math.random() * 40},${40 + Math.random() * 25},20,.18)`; g.lineWidth = Math.random() * 2; const x = Math.random() * s; g.beginPath(); g.moveTo(x, 0); g.bezierCurveTo(x + 6, s * 0.3, x - 6, s * 0.7, x + 3, s); g.stroke(); }
+    claddingFin: canvasTex(256, (g, s) => {
+      g.fillStyle = '#153a7a'; g.fillRect(0, 0, s, s);
+      for (let i = 0; i < 64; i++) { g.strokeStyle = `rgba(255,255,255,${0.03 + Math.random() * 0.05})`; g.lineWidth = 1; const y = (i / 64) * s; g.beginPath(); g.moveTo(0, y); g.lineTo(s, y); g.stroke(); }
     }),
-    ply: canvasTex(256, (g, s) => { g.fillStyle = '#2f302e'; g.fillRect(0, 0, s, s); speckle(g, 2000, s, 1, 40, 80, 0.3); g.fillStyle = 'rgba(246,245,242,.85)'; g.font = '600 26px Archivo, Arial'; g.fillText('AXEN FORM', 18, s / 2 + 8); }),
+    ply: canvasTex(256, (g, s) => {
+      g.fillStyle = '#0E3FA9'; g.fillRect(0, 0, s, s);
+      g.fillStyle = '#F27A1A'; g.fillRect(0, 0, s, 26);
+      speckle(g, 1200, s, 1, 20, 60, 0.14);
+      g.fillStyle = 'rgba(247,249,252,.94)'; g.font = '700 32px Archivo, Arial'; g.fillText('PROCARE', 24, s / 2 + 12);
+    }),
   };
   const M = {
-    concrete: new THREE.MeshStandardMaterial({ map: tex.concrete, roughness: 0.92, metalness: 0 }),
-    slab: new THREE.MeshStandardMaterial({ map: tex.slab, roughness: 0.9 }),
-    footing: new THREE.MeshStandardMaterial({ map: tex.slab, color: 0xa29d94, roughness: 0.95 }),
-    core: new THREE.MeshStandardMaterial({ map: tex.concrete, color: 0x9c978e, roughness: 0.92 }),
-    steel: new THREE.MeshStandardMaterial({ color: 0x9aa0a4, roughness: 0.45, metalness: 0.8 }),
+    concrete: new THREE.MeshStandardMaterial({ map: tex.concrete, roughness: 0.9, metalness: 0 }),
+    slab: new THREE.MeshStandardMaterial({ map: tex.slab, roughness: 0.88 }),
+    footing: new THREE.MeshStandardMaterial({ map: tex.slab, color: 0x9aa2b0, roughness: 0.95 }),
+    core: new THREE.MeshStandardMaterial({ map: tex.concrete, color: 0x929aa8, roughness: 0.92 }),
+    steel: new THREE.MeshStandardMaterial({ color: 0x9aa4b2, roughness: 0.4, metalness: 0.82 }),
     rebar: new THREE.MeshStandardMaterial({ color: 0x6b4a33, roughness: 0.7, metalness: 0.5 }),
-    rail: new THREE.MeshStandardMaterial({ color: 0xe0a72c, roughness: 0.55, metalness: 0.2 }),
-    toe: new THREE.MeshStandardMaterial({ color: 0xd94a2b, roughness: 0.7 }),
-    glass: new THREE.MeshStandardMaterial({ color: 0xa9bac2, roughness: 0.05, metalness: 0.7, envMapIntensity: 1.8, transparent: true, opacity: 0.62 }),
-    alu: new THREE.MeshStandardMaterial({ color: 0x2c2e31, roughness: 0.38, metalness: 0.75 }),
-    spandrel: new THREE.MeshStandardMaterial({ color: 0x24272a, roughness: 0.25, metalness: 0.6 }),
-    fin: new THREE.MeshStandardMaterial({ map: tex.timber, roughness: 0.75 }),
-    pv: new THREE.MeshStandardMaterial({ color: 0x1b2533, roughness: 0.18, metalness: 0.7, envMapIntensity: 1.3 }),
-    plant: new THREE.MeshStandardMaterial({ color: 0x5d6064, roughness: 0.6, metalness: 0.4 }),
-    hoard: new THREE.MeshStandardMaterial({ map: tex.ply, roughness: 0.85 }),
-    cabin: new THREE.MeshStandardMaterial({ color: 0xd9d6cf, roughness: 0.6, metalness: 0.1 }),
-    cabinWin: new THREE.MeshStandardMaterial({ color: 0x1d2227, roughness: 0.1, metalness: 0.8 }),
-    crane: new THREE.MeshStandardMaterial({ color: 0xd9a01c, roughness: 0.5, metalness: 0.35 }),
-    cw: new THREE.MeshStandardMaterial({ map: tex.slab, color: 0x8f8b84, roughness: 0.95 }),
-    lawn: new THREE.MeshStandardMaterial({ color: 0x4d5a36, roughness: 1 }),
-    paving: new THREE.MeshStandardMaterial({ map: tex.slab, color: 0xb7b1a6, roughness: 0.9 }),
-    leaf: new THREE.MeshStandardMaterial({ color: 0x5b6a3e, roughness: 0.9, flatShading: true }),
+    rail: new THREE.MeshStandardMaterial({ color: 0xf27a1a, roughness: 0.5, metalness: 0.2 }),
+    toe: new THREE.MeshStandardMaterial({ color: 0x0e3fa9, roughness: 0.6 }),
+    glass: new THREE.MeshStandardMaterial({ color: 0x9bb8d4, roughness: 0.05, metalness: 0.72, envMapIntensity: 1.8, transparent: true, opacity: 0.64 }),
+    alu: new THREE.MeshStandardMaterial({ color: 0x16294d, roughness: 0.32, metalness: 0.78 }),
+    spandrel: new THREE.MeshStandardMaterial({ color: 0x0e2452, roughness: 0.24, metalness: 0.65 }),
+    fin: new THREE.MeshStandardMaterial({ map: tex.claddingFin, roughness: 0.38, metalness: 0.65 }),
+    pv: new THREE.MeshStandardMaterial({ color: 0x11203d, roughness: 0.18, metalness: 0.72, envMapIntensity: 1.3 }),
+    plant: new THREE.MeshStandardMaterial({ color: 0x546075, roughness: 0.6, metalness: 0.4 }),
+    hoard: new THREE.MeshStandardMaterial({ map: tex.ply, roughness: 0.78 }),
+    cabin: new THREE.MeshStandardMaterial({ color: 0xe6ecf5, roughness: 0.55, metalness: 0.1 }),
+    cabinWin: new THREE.MeshStandardMaterial({ color: 0x0f1d38, roughness: 0.1, metalness: 0.8 }),
+    crane: new THREE.MeshStandardMaterial({ color: 0xf27a1a, roughness: 0.48, metalness: 0.35 }),
+    cw: new THREE.MeshStandardMaterial({ map: tex.slab, color: 0x8992a0, roughness: 0.95 }),
+    lawn: new THREE.MeshStandardMaterial({ color: 0x455c3c, roughness: 1 }),
+    paving: new THREE.MeshStandardMaterial({ map: tex.slab, color: 0xb7bfcc, roughness: 0.9 }),
+    leaf: new THREE.MeshStandardMaterial({ color: 0x526b44, roughness: 0.9, flatShading: true }),
     bark: new THREE.MeshStandardMaterial({ color: 0x4f463b, roughness: 1 }),
-    pallet: new THREE.MeshStandardMaterial({ map: tex.timber, color: 0xc9b08c, roughness: 0.9 }),
+    pallet: new THREE.MeshStandardMaterial({ color: 0xc9b08c, roughness: 0.9 }),
   };
 
   // ── ground
   const soil = new THREE.Mesh(new THREE.PlaneGeometry(900, 900), new THREE.MeshStandardMaterial({ map: tex.soil, roughness: 1 }));
   soil.rotation.x = -Math.PI / 2; soil.receiveShadow = true; scene.add(soil);
   tex.soil.repeat.set(60, 60);
-  const road = new THREE.Mesh(new THREE.PlaneGeometry(900, 12), new THREE.MeshStandardMaterial({ color: 0x2b2b2a, roughness: 0.9 }));
+  const road = new THREE.Mesh(new THREE.PlaneGeometry(900, 12), new THREE.MeshStandardMaterial({ color: 0x1f2533, roughness: 0.9 }));
   road.rotation.x = -Math.PI / 2; road.position.set(0, 0.02, 22); road.receiveShadow = true; scene.add(road);
-  for (let x = -200; x < 200; x += 6) { const m = new THREE.Mesh(new THREE.PlaneGeometry(2.6, 0.16), new THREE.MeshBasicMaterial({ color: 0xbdb8ae })); m.rotation.x = -Math.PI / 2; m.position.set(x, 0.03, 22); scene.add(m); }
+  for (let x = -200; x < 200; x += 6) { const m = new THREE.Mesh(new THREE.PlaneGeometry(2.6, 0.16), new THREE.MeshBasicMaterial({ color: 0xd0d8e8 })); m.rotation.x = -Math.PI / 2; m.position.set(x, 0.03, 22); scene.add(m); }
   const pave = new THREE.Mesh(new THREE.PlaneGeometry(900, 3), M.paving); pave.rotation.x = -Math.PI / 2; pave.position.set(0, 0.04, 14.6); pave.receiveShadow = true; scene.add(pave);
 
   const BX = 5, BZ = 3, BAY = 5, LV = 5, H = 3.4, BASE = 0.6;
@@ -1212,7 +1240,6 @@ function initBuild() {
   const mesh = (geo, mat, cast = true) => { const m = new THREE.Mesh(geo, mat); m.castShadow = cast; m.receiveShadow = true; return m; };
 
   const els = [];
-  // modes: drop (lowered in), grow (rises from base), slide (offset in), pop (scales up)
   function add(obj, pos, t0, dur, mode = 'drop', o = {}) {
     obj.position.copy(pos); obj.visible = false; (o.parent || scene).add(obj);
     els.push({ obj, base: pos.clone(), t0, dur, mode, tOut: o.tOut, outDur: o.outDur || 0.03, count: o.count !== false, slide: o.slide || V(0, 0, 0) });
@@ -1224,7 +1251,6 @@ function initBuild() {
   for (let x = -W / 2 - HO; x < W / 2 + HO - 0.1; x += 2.4) { segs.push([x + 1.2, -D / 2 - HO, 2.38, 0.06]); segs.push([x + 1.2, D / 2 + HZ, 2.38, 0.06]); }
   for (let z = -D / 2 - HO; z < D / 2 + HZ - 0.1; z += 2.4) { segs.push([-W / 2 - HO, z + 1.2, 0.06, 2.38]); segs.push([W / 2 + HO, z + 1.2, 0.06, 2.38]); }
   segs.forEach(([x, z, w, d], i) => add(mesh(box(w, 2.4, d, true), M.hoard), V(x, 0, z), 0.004 + (i / segs.length) * 0.035, 0.015, 'grow', { tOut: 0.93 + (i / segs.length) * 0.03, outDur: 0.015, count: false }));
-  // site cabins (stacked welfare units)
   const cabins = new THREE.Group();
   [[0, 0], [0, 2.7], [3.3, 0]].forEach(([dx, dy]) => {
     const c = mesh(box(6, 2.6, 2.6, true), M.cabin); c.position.set(0, dy, dx); cabins.add(c);
@@ -1232,7 +1258,6 @@ function initBuild() {
   });
   add(cabins, V(W / 2 + 2.6, 0, -D / 2 - 3.2), 0.03, 0.03, 'drop', { tOut: 0.94, count: false });
   cabins.rotation.y = Math.PI / 2;
-  // material laydown: pallets + rebar bundles
   const lay = new THREE.Group();
   for (let i = 0; i < 4; i++) { const p = mesh(box(1.2, 0.5, 1.0, true), M.pallet); p.position.set(i * 1.5, 0, 0); lay.add(p); }
   for (let i = 0; i < 3; i++) { const r = mesh(new THREE.CylinderGeometry(0.22, 0.22, 6, 8), M.rebar); r.rotation.z = Math.PI / 2; r.position.set(2, 0.25 + i * 0.4, 1.6); lay.add(r); }
@@ -1253,7 +1278,6 @@ function initBuild() {
     const w0 = S0 + L * SL, y = lvY(L), top = y + H;
     nodes.forEach(([x, z], i) => add(mesh(colGeo, M.concrete), V(x, y, z), w0 + (i / nodes.length) * SL * 0.38, SL * 0.12, 'grow'));
     add(mesh(box(BAY - 0.6, H, BAY - 0.6, true), M.core), V(X0 + BAY * 0.5, y, Z0 + BAY * 0.5), w0, SL * 0.4, 'grow');
-    // formwork props under this deck, struck two floors later
     const props = new THREE.InstancedMesh(propGeo, M.steel, BX * BZ * 4);
     let n = 0; const mtx = new THREE.Matrix4();
     for (let i = 0; i < BX; i++) for (let k = 0; k < BZ; k++) for (let a = 0; a < 4; a++) {
@@ -1262,25 +1286,21 @@ function initBuild() {
     }
     props.castShadow = true;
     add(props, V(0, y, 0), w0 + SL * 0.3, SL * 0.2, 'grow', { tOut: Math.min(0.6, w0 + SL * 2.2), outDur: 0.02, count: false });
-    // downstand beams
     const beams = [];
     for (let k = 0; k <= BZ; k++) for (let i = 0; i < BX; i++) beams.push([X0 + i * BAY + BAY / 2, Z0 + k * BAY, BAY, 0.4]);
     for (let i = 0; i <= BX; i++) for (let k = 0; k < BZ; k++) beams.push([X0 + i * BAY, Z0 + k * BAY + BAY / 2, 0.4, BAY]);
     beams.forEach(([x, z, w, d], i) => add(mesh(box(w, 0.55, d), M.concrete), V(x, top - 0.28 - 0.27, z), w0 + SL * 0.3 + (i / beams.length) * SL * 0.32, SL * 0.12, 'drop'));
-    // deck
     for (let i = 0; i < BX; i++) for (let k = 0; k < BZ; k++) {
       if (i === 0 && k === 0 && L < LV - 1) continue;
       add(mesh(box(BAY - 0.04, 0.28, BAY - 0.04), M.slab), V(X0 + i * BAY + BAY / 2, top - 0.14, Z0 + k * BAY + BAY / 2), w0 + SL * 0.6 + ((i * BZ + k) / (BX * BZ)) * SL * 0.3, SL * 0.12, 'drop');
     }
     const done = w0 + SL; slabDone.push(done);
-    // starter bars poking out of the new deck, gone when the next columns are cast
     if (L < LV - 1) {
       const bars = new THREE.InstancedMesh(barGeo, M.rebar, nodes.length * 4);
       let b = 0;
       nodes.forEach(([x, z]) => { for (let a = 0; a < 4; a++) { mtx.makeTranslation(x + (a % 2 ? 0.14 : -0.14), 0, z + (a < 2 ? 0.14 : -0.14)); bars.setMatrixAt(b++, mtx); } });
       add(bars, V(0, top, 0), done - 0.01, 0.01, 'grow', { tOut: done + SL * 0.25, outDur: 0.01, count: false });
     }
-    // edge protection on the working deck, removed as the envelope reaches it
     const rail = new THREE.Group();
     const rh = 1.1, ex = W / 2 + 0.15, ez = D / 2 + 0.15;
     [[0, ez, W + 0.3, 0.05], [0, -ez, W + 0.3, 0.05], [ex, 0, 0.05, D + 0.3], [-ex, 0, 0.05, D + 0.3]].forEach(([x, z, w, d]) => {
@@ -1291,12 +1311,12 @@ function initBuild() {
     add(rail, V(0, top, 0), done - 0.005, 0.012, 'grow', { tOut: 0.62 + ((L + 1) / LV) * 0.16, outDur: 0.012, count: false });
   }
 
-  // ── 03 Envelope: unitised curtain wall, then timber fins
+  // ── 03 Envelope: curtain wall & architectural cladding panels
   const E0 = 0.62, EL = 0.16;
   function cwUnit(len, axis) {
     const g = new THREE.Group(), h = H - 0.28;
     const pane = mesh(axis === 'x' ? box(len - 0.06, h - 0.9, 0.03) : box(0.03, h - 0.9, len - 0.06), M.glass, false); pane.position.y = 0.45 + (h - 0.9) / 2; g.add(pane);
-    const sp = mesh(axis === 'x' ? box(len - 0.02, 0.9, 0.06) : box(0.06, 0.9, len - 0.02), M.spandrel, false); sp.position.y = h - 0.0 + 0.0 - 0.45 + 0.45 - 0.0; sp.position.y = h + 0.0 - 0.45; g.add(sp);
+    const sp = mesh(axis === 'x' ? box(len - 0.02, 0.9, 0.06) : box(0.06, 0.9, len - 0.02), M.spandrel, false); sp.position.y = h - 0.45; g.add(sp);
     for (let m = 0; m <= 3; m++) {
       const off = -len / 2 + (m / 3) * len;
       const mu = mesh(axis === 'x' ? box(0.07, h + 0.28, 0.14) : box(0.14, h + 0.28, 0.07), M.alu, false);
@@ -1318,9 +1338,9 @@ function initBuild() {
     }
   }
   const roofY = lvY(LV);
-  for (let f = 0; f <= BX * 2; f++) add(mesh(box(0.22, roofY - BASE + 1.0, 0.7, true), M.fin), V(X0 + f * (BAY / 2), BASE, D / 2 + 0.8), 0.75 + (f / (BX * 2)) * 0.06, 0.02, 'grow');
+  for (let f = 0; f <= BX * 2; f++) add(mesh(box(0.24, roofY - BASE + 1.0, 0.72, true), M.fin), V(X0 + f * (BAY / 2), BASE, D / 2 + 0.8), 0.75 + (f / (BX * 2)) * 0.06, 0.02, 'grow');
 
-  // ── 04 Roof & plant
+  // ── 04 Roof, metalwork & plant
   [[0, D / 2 + 0.1, W + 0.5, 0.25], [0, -D / 2 - 0.1, W + 0.5, 0.25], [W / 2 + 0.1, 0, 0.25, D], [-W / 2 - 0.1, 0, 0.25, D]].forEach(([x, z, w, d], i) =>
     add(mesh(box(w, 1.0, d, true), M.concrete), V(x, roofY, z), 0.82 + i * 0.008, 0.02, 'grow'));
   const plant = new THREE.Group();
@@ -1333,15 +1353,22 @@ function initBuild() {
     add(pv, V(X0 + 2 + i * 1.95, roofY + 0.55, Z0 + 1.6 + k * 1.75), 0.86 + ((i + k * 12) / 84) * 0.05, 0.012, 'drop');
   }
 
-  // ── 05 Handover: lights on, landscape in
+  // ── 05 Illumination & handover
   const glows = [];
   for (let L = 0; L < LV; L++) {
-    const m = new THREE.MeshBasicMaterial({ color: 0xffc888, transparent: true, opacity: 0, depthWrite: false, fog: false });
+    const m = new THREE.MeshBasicMaterial({ color: 0xffd09a, transparent: true, opacity: 0, depthWrite: false, fog: false });
     const pl = new THREE.Mesh(new THREE.PlaneGeometry(W - 0.6, D - 0.6), m); pl.rotation.x = Math.PI / 2; pl.position.set(0, lvY(L) + H - 0.3, 0); scene.add(pl);
     const back = new THREE.Mesh(new THREE.PlaneGeometry(W - 0.6, H - 0.5), m); back.position.set(0, lvY(L) + H / 2, -D / 2 + 1.2); scene.add(back);
     glows.push({ m, t: 0.925 + ((L * 3) % 5) * 0.008 });
   }
-  const lamp = new THREE.PointLight(0xffb36b, 0, 40, 1.6); lamp.position.set(0, 4, D / 2 + 4); scene.add(lamp);
+  // rooftop illuminated fascia strip
+  const signGlowMat = new THREE.MeshBasicMaterial({ color: 0xf27a1a, transparent: true, opacity: 0, depthWrite: false, fog: false });
+  const signStrip = new THREE.Mesh(new THREE.BoxGeometry(W * 0.62, 0.85, 0.24), signGlowMat);
+  signStrip.position.set(0, roofY + 0.55, D / 2 + 0.52);
+  scene.add(signStrip);
+  glows.push({ m: signGlowMat, t: 0.93 });
+
+  const lamp = new THREE.PointLight(0xffb36b, 0, 44, 1.6); lamp.position.set(0, 4, D / 2 + 4); scene.add(lamp);
   const lawn = mesh(new THREE.PlaneGeometry(W + 10, 5.6), M.lawn, false); lawn.rotation.x = -Math.PI / 2;
   add(lawn, V(0, 0.05, D / 2 + 4.6), 0.94, 0.02, 'pop');
   const path = mesh(box(3, 0.08, 6, true), M.paving, false); add(path, V(4, 0.03, D / 2 + 4.6), 0.945, 0.02, 'pop');
@@ -1353,7 +1380,7 @@ function initBuild() {
     add(g, V(x, 0, z), 0.935 + i * 0.004, 0.025, 'pop');
   });
 
-  // ── Tower crane: lattice of real members (instanced)
+  // ── Tower crane
   const crane = new THREE.Group(); crane.position.set(X0 - 4.2, 0, Z0 - 3.4); scene.add(crane);
   const memberGeo = new THREE.BoxGeometry(1, 1, 1);
   function lattice(pairs, t, parent) {
@@ -1389,7 +1416,7 @@ function initBuild() {
   const cabG = mesh(box(0.05, 1.0, 1.2), M.cabinWin, false); cabG.position.set(2.22, -1.1, 1.2); slew.add(cabG);
   const trolley = new THREE.Group(); slew.add(trolley);
   const ropeGeo = new THREE.BufferGeometry(); ropeGeo.setAttribute('position', new THREE.Float32BufferAttribute([-0.12, 0, 0, -0.12, -10, 0, 0.12, 0, 0, 0.12, -10, 0], 3));
-  const rope = new THREE.LineSegments(ropeGeo, new THREE.LineBasicMaterial({ color: 0x2a2a2a })); trolley.add(rope);
+  const rope = new THREE.LineSegments(ropeGeo, new THREE.LineBasicMaterial({ color: 0x1a2640 })); trolley.add(rope);
   const hook = mesh(box(0.6, 0.9, 0.4), M.crane); trolley.add(hook);
   const load = new THREE.Group();
   for (let i = 0; i < 3; i++) { const b = mesh(box(4.6, 0.25, 0.3), M.concrete); b.position.set(0, 0, (i - 1) * 0.34); load.add(b); }
@@ -1429,8 +1456,8 @@ function initBuild() {
   }
   resize(); addEventListener('resize', resize);
 
-  const skyDay = { top: new THREE.Color(0x26303a), mid: new THREE.Color(0x66707a), hor: new THREE.Color(0xc9a07a) };
-  const skyNight = { top: new THREE.Color(0x0f141b), mid: new THREE.Color(0x2c333b), hor: new THREE.Color(0x6e5440) };
+  const skyDay = { top: new THREE.Color(0x0c214d), mid: new THREE.Color(0x3a5b8c), hor: new THREE.Color(0xd8a378) };
+  const skyNight = { top: new THREE.Color(0x050e24), mid: new THREE.Color(0x13274d), hor: new THREE.Color(0x63483b) };
   let ps = reduce ? 1 : 0, active = false, lastStage = -1;
   visibleWatch(section, v => { active = v; if (v) requestAnimationFrame(loop); });
   const tmp = new THREE.Vector3(), target = V(0, 7.5, 0);
@@ -1455,17 +1482,15 @@ function initBuild() {
       if (k >= 1 && e.count) placed++;
     }
 
-    // dusk → evening at handover
     const night = smooth(clamp((ps - 0.9) / 0.08));
     skyU.top.value.copy(skyDay.top).lerp(skyNight.top, night);
     skyU.mid.value.copy(skyDay.mid).lerp(skyNight.mid, night);
     skyU.hor.value.copy(skyDay.hor).lerp(skyNight.hor, night);
-    sun.intensity = 3.1 - night * 2.3; hemi.intensity = 0.55 - night * 0.3;
-    scene.fog.color.setRGB(0.54 - night * 0.3, 0.48 - night * 0.28, 0.42 - night * 0.26);
+    sun.intensity = 3.1 - night * 2.3; hemi.intensity = 0.6 - night * 0.32;
+    scene.fog.color.setRGB(0.43 - night * 0.28, 0.48 - night * 0.3, 0.58 - night * 0.34);
     glows.forEach(g => { g.m.opacity = smooth(clamp((ps - g.t) / 0.03)) * 0.95; });
-    lamp.intensity = night * 60;
+    lamp.intensity = night * 65;
 
-    // crane: erected during groundwork, dismantled once the roof is on
     const cIn = easeOut(clamp((ps - 0.015) / 0.09)), cOut = smooth(clamp((ps - 0.88) / 0.05));
     crane.scale.y = Math.max(0.001, cIn * (1 - cOut)); crane.visible = cIn > 0.01 && cOut < 0.999;
     const tm = now / 1000;
@@ -1476,7 +1501,6 @@ function initBuild() {
     hook.position.y = -drop - 0.45; load.position.y = -drop - 1.4; load.rotation.y = Math.sin(tm * 0.6) * 0.15;
     load.visible = ps > 0.12 && ps < 0.86;
 
-    // camera orbit
     if (!dragging) { dragV *= 0.94; drag += dragV; }
     const narrowView = w <= 820;
     const az = -0.75 + ps * 1.5 + drag + mxN * 0.12;
@@ -1487,11 +1511,10 @@ function initBuild() {
     sky.position.copy(camera.position);
     renderer.render(scene, camera);
 
-    // HUD
     roEl.textContent = String(placed).padStart(3, '0');
-    roWk.textContent = String(Math.round(ps * 46)).padStart(2, '0');
+    roWk.textContent = String(Math.round(ps * 100)).padStart(2, '0');
     const lvlIdx = Math.min(LV - 1, Math.floor((ps - 0.14) / SL));
-    roLvl.textContent = ps < 0.14 ? 'GF' : ps >= 0.62 ? 'Roof' : 'L0' + (lvlIdx + 1);
+    roLvl.textContent = ps < 0.14 ? 'GF' : ps >= 0.92 ? 'Lit' : ps >= 0.62 ? 'Clad' : 'L0' + (lvlIdx + 1);
     bar.style.transform = `scaleX(${ps})`;
     let si = 0; stageAt.forEach((t, i) => { if (ps >= t) si = i; });
     if (si !== lastStage) { stages.forEach((s, i) => { s.classList.toggle('is-active', i === si); s.classList.toggle('is-done', i < si); }); lastStage = si; }
@@ -1505,7 +1528,6 @@ function initBuild() {
   }
 }
 
-// build each WebGL scene only when the reader gets close to it
 function whenNear(el, fn) { if (!el) return; const io = new IntersectionObserver(([e]) => { if (e.isIntersecting) { io.disconnect(); fn(); } }, { rootMargin: '900px 0px' }); io.observe(el); }
 whenNear(document.getElementById('process'), initBuild);
 </script>
